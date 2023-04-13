@@ -15,6 +15,8 @@
   --tertiary-text: var(--black);
 
   --primary-hover: #36ABA7;
+  --secondary-hover: #E9DA35;
+  --tertiary-hover: #CE4B27;
 
   --font-family-sans: 'Barlow', sans-serif;
   --font-family-condensed: 'Barlow Condensed', sans-serif;
