@@ -1,8 +1,14 @@
+import Text from './stories/Text'
+import './styles/App.css'
+
 function App() {
   return (
-    <>
-      <h1>Here's UI</h1>
-    </>
+    <div className="App">
+      <Text variant="title" extra>Here's UI</Text>
+      <Text>organització</Text>
+      <Text>usuari</Text>
+      <Text>admin d'Here's</Text>
+    </div>
   )
 }
 
