@@ -1,0 +1,19 @@
+.text {
+  font-size: 1.6rem;
+}
+
+.text--title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1.75px;
+}
+
+.text--subtitle {
+  font-size: 1.8rem;
+  font-family: var(--font-family-condensed);
+}
+
+.text--title__extra {
+  font-size: 7.5rem;
+  font-weight: 600;
+}
