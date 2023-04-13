@@ -1,5 +1,6 @@
 .text {
   font-size: 1.6rem;
+  padding: 0.25em 0;
 }
 
 .text--title {
