@@ -1,0 +1,60 @@
+:root {
+  --btn-color: var(--primary);
+  --btn-color-hover: var(--primary-hover);
+  --btn-color-contrast: var(--white);
+}
+
+.button {
+  display: inline-block;
+  border-radius: var(--border-radius, 'none');
+  padding: 8px 16px;
+  background: var(--btn-color);
+  color: var(--btn-color-contrast);
+  border: 2px solid var(--btn-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: var(--font-family-sans);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--btn-color-hover);
+  border-color: var(--btn-color-hover);
+  color: var(--btn-color-contrast);
+}
+
+.button--base,
+.button--shy {
+  background: inherit;
+  color: var(--btn-color);
+}
+
+.button--base:hover,
+.button--shy:hover {
+  background: var(--btn-color);
+  border-color: var(--btn-color);
+  color: var(--btn-color-contrast);
+}
+
+.button--shy {
+  border-color: transparent;
+}
+
+.button--shy:hover {
+  background: transparent;
+  border-color: transparent;
+  color: var(--btn-color-hover);
+}
+
+.button--secondary {
+  --btn-color: var(--secondary);
+  --btn-color-hover: var(--secondary-hover);
+  --btn-color-contrast: var(--black);
+}
+
+.button--tertiary {
+  --btn-color: var(--tertiary);
+  --btn-color-hover: var(--tertiary-hover);
+  --btn-color-contrast: var(--white);
+}
