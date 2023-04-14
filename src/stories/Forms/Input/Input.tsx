@@ -1,3 +1,4 @@
+import '../forms.css'
 import './Input.css'
 
 export interface InputProps {
