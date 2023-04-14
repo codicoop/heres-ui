@@ -1,0 +1,12 @@
+textarea {
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border: 2px solid var(--gray);
+  border-radius: 'none';
+}
+
+textarea:focus {
+  accent-color: var(--primary);
+  outline: none;
+  border-color: var(--primary);
+}
