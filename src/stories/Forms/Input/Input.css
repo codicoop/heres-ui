@@ -1,0 +1,23 @@
+.form--item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+input {
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border: 2px solid var(--gray);
+  border-radius: 'none';
+}
+
+input:focus {
+  accent-color: var(--primary);
+  outline: none;
+  border-color: var(--primary);
+}
