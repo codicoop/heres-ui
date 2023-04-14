@@ -1,0 +1,18 @@
+.form--checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 1rem;
+}
+
+.form--checkbox__left {
+  flex-direction: column-reverse;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--primary);
+}
