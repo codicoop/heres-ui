@@ -1,0 +1,45 @@
+:root {
+  --bg-go-to-section: var(--white);
+  --color-go-to-section: var(--black);
+}
+
+.go-to-sections {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.go-to-sections > * {
+  flex: 1 1 100%;
+}
+
+.go-to-sections--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--bg-go-to-section);
+  color: var(--color-go-to-section);
+  padding: 3rem;
+}
+
+.item--primary {
+  --bg-go-to-section: var(--primary);
+  --color-go-to-section: var(--white);
+}
+
+.item--secondary {
+  --bg-go-to-section: var(--secondary);
+  --color-go-to-section: var(--black);
+}
+
+.item--tertiary {
+  --bg-go-to-section: var(--tertiary);
+  --color-go-to-section: var(--white);
+}
+
+.item--gray {
+  --bg-go-to-section: var(--gray);
+  --color-go-to-section: var(--white);
+}
