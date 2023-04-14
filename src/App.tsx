@@ -1,4 +1,4 @@
-import Text from './stories/Text'
+import Text from './stories/Typography/Text'
 import './styles/App.css'
 
 function App() {
