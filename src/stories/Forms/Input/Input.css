@@ -1,16 +1,16 @@
-label {
+.form--item label {
   font-size: 1.8rem;
   font-weight: 700;
 }
 
-input {
+.form--item input {
   font-size: 1.6rem;
   padding: 0.8rem;
   border: 2px solid var(--gray);
   border-radius: 'none';
 }
 
-input:focus {
+.form--item input:focus {
   accent-color: var(--primary);
   outline: none;
   border-color: var(--primary);

@@ -13,6 +13,6 @@
   flex-direction: column-reverse;
 }
 
-input[type="checkbox"] {
+.form--checkbox input[type="checkbox"] {
   accent-color: var(--primary);
 }
