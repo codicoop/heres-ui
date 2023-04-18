@@ -2,7 +2,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Text from './stories/Typography/Text'
 import './styles/App.css'
 import { Error404, Home, InitWireframe } from './pages'
-import { MenuModal } from './components'
+import { WireframesProvider } from './config/WireframesContext'
+// import { MenuModal } from './components'
 
 const routes: object[] = [
   {
@@ -27,8 +28,10 @@ const router = createBrowserRouter(routes)
 function App() {
   return (
     <div className="App">
-      <RouterProvider router={router} />
-      <MenuModal />
+      <WireframesProvider>
+        <RouterProvider router={router} />
+      {/* <MenuModal /> */}
+      </WireframesProvider>
     </div>
   )
 }
