@@ -3,6 +3,7 @@ body {
   height: 100%;
   font-family: var(--font-family-sans);
   font-size: var(--font-size-base, 10px);
+  color: var(--black);
 }
 
 #root {
