@@ -6,6 +6,7 @@ export interface ButtonProps {
   relevance?: 'call' | 'base' | 'shy',
   color?: 'primary' | 'secondary' | 'tertiary',
   type?: 'button' | 'submit' | 'reset',
+  bigBtn?: boolean,
   className?: string,
 }
 
@@ -15,10 +16,11 @@ export function Button ({
   relevance = 'call',
   color = 'primary',
   type = 'button',
+  bigBtn = false,
   className,
   ...props
 }: ButtonProps) {
-  const buttonClass = `button button--${relevance} button--${color} ${className ? className : ''}`
+  const buttonClass = `button button--${relevance} button--${color} ${bigBtn ? 'button--big' : ''} ${className ? className : ''}`
   return (
     <button
       onClick={onClick}
