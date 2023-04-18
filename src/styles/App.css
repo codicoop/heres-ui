@@ -6,3 +6,40 @@
   height: 100%;
   gap: 2rem;
 }
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(247, 247, 247, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.modal--closed {
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.modal--open {
+  display: flex;
+  opacity: 1;
+  pointer-events: inherit;
+  z-index: inherit;
+}
+
+.modal--content {
+  background-color: var(--white);
+  border: 2px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

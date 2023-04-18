@@ -13,7 +13,8 @@
   "dependencies": {
     "minireset.css": "^0.0.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.2",
