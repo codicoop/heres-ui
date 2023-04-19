@@ -1,5 +1,5 @@
 import { Error404, Home, InitWireframe } from '../pages'
-import { Login, RecoverPass } from '../pages/Auth'
+import { Login, RecoverPass, RecoverPassOk } from '../pages/Auth'
 import { Inici } from '../pages/Base'
 
 export const routesHeader: any[] = [
@@ -56,7 +56,7 @@ export const routesAuth: any[] = [
   },
   {
     path: 'recoverpass-ok',
-    element: <>Mail Recuperar Contrasenya</>,
+    element: <RecoverPassOk />,
     name: 'Mail Recover Password',
     role: ['all'],
   },
