@@ -1,9 +1,9 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './styles/App.css'
-import { routesWireframes } from './routes'
+import { routes } from './routes'
 import { WireframesProvider } from './config/WireframesContext'
 
-const router = createBrowserRouter(routesWireframes)
+const router = createBrowserRouter(routes)
 
 function App() {
   return (
