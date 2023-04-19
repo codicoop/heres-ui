@@ -1,7 +1,7 @@
 import { Error404, Home, InitWireframe } from '../pages'
 import { Inici } from '../pages/Base'
 
-export const routes: any[] = [
+export const routesWireframes: any[] = [
   {
     path: '/',
     element: <Home />,

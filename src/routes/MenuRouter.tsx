@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
-import { routes } from "./routes"
+import { routesWireframes } from "./routes"
 
 export default function MenuRouter (): JSX.Element {
   return (
     <nav>
       <ul className='menu'>
-        {routes
+        {routesWireframes
           // anivellar les rutes, de tal manera que també s'imprimeixin les rutes de les subrutes
           .map((route) => (
             route.children ?

@@ -1,2 +1,2 @@
 export { default as MenuRouter } from './MenuRouter';
-export { routes } from './routes';
+export { routesWireframes } from './routes';
