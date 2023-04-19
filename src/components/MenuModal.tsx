@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Text } from "../stories/Typography/Text/Text";
+import { Text } from "../stories/Typography";
 // import Menu from "../routes/Menu";
 // import { Link } from "react-router-dom";
 // import { roles } from "../routes/roles";

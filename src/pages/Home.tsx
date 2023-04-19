@@ -1,6 +1,6 @@
 import RoleButtons from "../components/RoleButtons";
 import { MenuRouter } from "../routes";
-import { Text } from "../stories/Typography/Text/Text";
+import { Text } from "../stories/Typography";
 
 export default function Home (): JSX.Element {
   return (

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ItemNav } from "../stories/ItemNav";
-import { Text } from "../stories/Typography/Text/Text";
+import { Text } from "../stories/Typography";
 import { routesHeader } from "../routes";
 import { useContext } from "react";
 import { WireframesContext } from "../config/WireframesContext";

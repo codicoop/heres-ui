@@ -1,4 +1,4 @@
-import { Text } from '../../Typography/Text/Text'
+import { Text } from '../../Typography'
 import './GoToSections.css'
 
 export interface section {
