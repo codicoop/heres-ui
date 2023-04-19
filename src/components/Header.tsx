@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ItemNav } from "../stories/ItemNav/ItemNav";
+import { ItemNav } from "../stories/ItemNav";
 import { Text } from "../stories/Typography/Text/Text";
 import { routesHeader } from "../routes";
 import { useContext } from "react";

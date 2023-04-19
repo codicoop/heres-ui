@@ -1,1 +1,1 @@
-export { ItemNav as default } from './ItemNav';
+export { ItemNav } from './ItemNav';
