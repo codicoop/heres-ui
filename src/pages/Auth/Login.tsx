@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Input } from "../../stories/Forms/Input/Input";
-import { Title } from "../../stories/Typography/Title/Title";
+import { Title } from "../../stories/Typography/Title";
 import { Button } from "../../stories/Button";
 import { useContext } from "react";
 import { WireframesContext } from "../../config/WireframesContext";
