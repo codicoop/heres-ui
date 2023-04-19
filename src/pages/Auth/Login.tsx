@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Input } from "../../stories/Forms";
 import { Title } from "../../stories/Typography";
-import { Button } from "../../stories/Button";
+import { Button } from "../../stories/Molecules";
 import { useContext } from "react";
 import { WireframesContext } from "../../config/WireframesContext";
 
