@@ -11,7 +11,6 @@ export default function Login (): JSX.Element {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log(e)
     setAuth(true)
     navigate('/app/inici')
   }
