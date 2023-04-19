@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Button } from "../stories/Button/Button";
+import { Button } from "../stories/Button";
 import { WireframesContext } from "../config/WireframesContext";
 
 export default function RoleButtons (): JSX.Element {
