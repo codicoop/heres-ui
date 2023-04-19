@@ -3,4 +3,5 @@ export {
   routes,
   routesWireframes,
   routesHeader,
+  routesDashboard,
 } from './routes';

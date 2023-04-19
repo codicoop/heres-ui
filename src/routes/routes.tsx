@@ -62,6 +62,15 @@ export const routesAuth: any[] = [
   },
 ]
 
+export const routesDashboard: any[] = [
+  {
+    path: 'perfil',
+    element: <>Perfil</>,
+    name: 'Perfil',
+    role: ['all'],
+  },
+]
+
 export const routesWireframes: any[] = [
   {
     path: '/',
@@ -84,6 +93,7 @@ export const routesWireframes: any[] = [
       },
       ...routesHeader,
       ...routesAuth,
+      ...routesDashboard,
     ],
   }
 ]
