@@ -1,0 +1,11 @@
+.item-nav {
+  font-size: 1.8rem;
+  font-weight: medium;
+  list-style: none;
+  cursor: pointer;
+}
+
+.item-nav:hover span {
+  border-bottom: 3px solid var(--secondary);
+  font-weight: bold;
+}
