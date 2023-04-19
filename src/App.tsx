@@ -2,7 +2,6 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './styles/App.css'
 import { routes } from './routes'
 import { WireframesProvider } from './config/WireframesContext'
-// import { MenuModal } from './components'
 
 const router = createBrowserRouter(routes)
 
