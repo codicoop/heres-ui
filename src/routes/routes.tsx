@@ -1,4 +1,5 @@
 import { Error404, Home, InitWireframe } from '../pages'
+import { Login } from '../pages/Auth'
 import { Inici } from '../pages/Base'
 
 export const routesHeader: any[] = [
@@ -37,7 +38,7 @@ export const routesHeader: any[] = [
 export const routesAuth: any[] = [
   {
     path: 'login',
-    element: <>Login</>,
+    element: <Login />,
     name: 'Login',
     role: ['all'],
   },
@@ -48,15 +49,15 @@ export const routesAuth: any[] = [
     role: ['all'],
   },
   {
-    path: 'newpass',
-    element: <>NewPass</>,
-    name: 'New Password',
+    path: 'recoverpass',
+    element: <>Recuperar Contrasenya</>,
+    name: 'Recover Password',
     role: ['all'],
   },
   {
-    path: 'newpass-ok',
-    element: <>Contraseña al mail</>,
-    name: 'Recover Password',
+    path: 'recoverpass-ok',
+    element: <>Mail Recuperar Contrasenya</>,
+    name: 'Mail Recover Password',
     role: ['all'],
   },
 ]
