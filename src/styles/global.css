@@ -10,3 +10,8 @@ body {
   height: 100%;
   font-size: 1.4rem;
 }
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
