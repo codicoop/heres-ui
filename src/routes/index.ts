@@ -1,2 +1,2 @@
-export { default as Menu } from './Menu';
+export { default as MenuRouter } from './MenuRouter';
 export { routes } from './routes';
