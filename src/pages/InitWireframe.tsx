@@ -1,12 +1,10 @@
 import { Outlet } from "react-router-dom";
-import { Text } from "../stories/Typography/Text/Text";
+import Header from "../components/Header";
 
 export default function InitWireframe (): JSX.Element {
   return (
     <>
-      <Text>
-        Menu Component
-      </Text>
+      <Header />
       <Outlet />
     </>
   )
