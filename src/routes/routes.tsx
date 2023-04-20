@@ -1,7 +1,7 @@
 import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../pages/Auth'
 import { Contact, ContactOk, Inici } from '../pages/Base'
-import { Biblio } from '../pages/Biblio'
+import { Biblio, PracticeList } from '../pages/Biblio'
 
 export const routesHeader: any[] = [
   {
@@ -90,7 +90,7 @@ export const routesDashboard: any[] = [
 export const routesBiblio: any[] = [
   {
     path: 'practiques',
-    element: <>Bones Practiques</>,
+    element: <PracticeList />,
     name: 'Bones Pràctiques',
     role: ['all'],
   },
