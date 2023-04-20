@@ -2,14 +2,6 @@ import { Link } from "react-router-dom";
 import { Text, Title } from "../../stories/Typography";
 import { GoToSection } from "../../stories/Cards";
 
-const sections = [
-  {
-    name: 'Autodiagnosi',
-    color: 'blue',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.'
-  },
-]
-
 export default function Inici (): JSX.Element {
   return (
     <>
