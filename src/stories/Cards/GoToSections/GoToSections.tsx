@@ -1,12 +1,6 @@
 import { Text } from '../../Typography'
+import { section } from '../GoToSection'
 import './GoToSections.css'
-
-export interface section {
-  name: string,
-  url: string,
-  color: 'primary' | 'secondary' | 'tertiary' | 'gray' | 'white',
-  description?: string,
-}
 
 export interface GoToSectionsProps {
   sections: section[],
