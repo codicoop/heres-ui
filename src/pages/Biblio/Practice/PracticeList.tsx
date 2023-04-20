@@ -1,16 +1,24 @@
 import { PracticeCard } from "../../../stories/Cards"
-import { practices } from "./mock-practice"
+import { SideSectionFilter } from "../../../stories/Organisms"
+import { infoSideSectionFilter, practices } from "./mock-practice"
 
 export default function PracticeList (): JSX.Element {
   return (
-    <div className="practice-list">
-      {practices.map((practice) => (
-        <PracticeCard
-          key={practice.id}
-          title={practice.title}
-          summary={practice.summary}
-        />
-      ))}
-    </div>
+    <>
+      <SideSectionFilter
+        title={infoSideSectionFilter.title}
+        description={infoSideSectionFilter.description}
+        filters={infoSideSectionFilter.filters}
+      />
+      <div className="practice-list">
+        {practices.map((practice) => (
+          <PracticeCard
+            key={practice.id}
+            title={practice.title}
+            summary={practice.summary}
+          />
+        ))}
+      </div>
+    </>
   )
 }
