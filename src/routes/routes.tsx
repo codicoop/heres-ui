@@ -1,5 +1,5 @@
 import { Error404, Home, InitWireframe } from '../pages'
-import { Login, RecoverPass, RecoverPassOk } from '../pages/Auth'
+import { Login, RecoverPass, RecoverPassOk, Register } from '../pages/Auth'
 import { Contact, ContactOk, Inici } from '../pages/Base'
 import { Biblio } from '../pages/Biblio'
 
@@ -45,7 +45,7 @@ export const routesAuth: any[] = [
   },
   {
     path: 'register/:step',
-    element: <>Register</>,
+    element: <Register />,
     name: 'Register',
     role: ['all'],
   },
