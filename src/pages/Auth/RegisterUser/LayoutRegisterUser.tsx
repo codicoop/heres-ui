@@ -20,7 +20,7 @@ export default function LayoutRegisterUser ({
     if (stepPosition < totelSteps) 
       navigate(`/app/register/${stepPosition + 1}`)
     if (stepPosition === totelSteps) 
-      navigate(`/app/login`)
+      navigate(`/app/register-ok`)
   }
 
   return (

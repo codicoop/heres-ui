@@ -19,8 +19,8 @@ export default function LayoutRegisterOrg ({
     e.preventDefault()
     if (stepPosition < totelSteps) 
       navigate(`/app/register/${stepPosition + 1}`)
-    if (stepPosition === totelSteps) 
-      navigate(`/app/login`)
+    if (stepPosition === totelSteps)
+      navigate(`/app/register-ok`)
   }
 
   return (
