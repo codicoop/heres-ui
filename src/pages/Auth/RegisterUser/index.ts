@@ -1,3 +1,4 @@
+export { default as LayoutRegisterUser } from './LayoutRegisterUser';
 export { default as RegisterUser1 } from './RegisterUser1';
 export { default as RegisterUser2 } from './RegisterUser2';
 export { default as RegisterUser3 } from './RegisterUser3';
