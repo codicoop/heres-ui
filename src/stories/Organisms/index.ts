@@ -1,0 +1,1 @@
+export { SideSectionFilter } from './SideSectionFilter/SideSectionFilter';
