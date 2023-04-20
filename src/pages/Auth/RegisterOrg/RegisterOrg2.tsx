@@ -1,7 +1,32 @@
+import { LayoutRegisterOrg } from ".";
+import { Input } from "../../../stories/Forms";
+import { Button } from "../../../stories/Molecules";
+
 export default function RegisterOrg2 (): JSX.Element {
   return (
-    <>
-      RegisterOrg2
-    </>
+    <LayoutRegisterOrg>
+      <>
+        <Input
+          label="Nom comercial"
+          name="comercial-name"
+        />
+        <Input
+          label="Nom fiscal"
+          name="fiscal-name"
+        />
+        <Input
+          label="NIF"
+          name="nif"
+        />
+        <Input
+          label="Adreça de la seu social"
+          name="address"
+        />
+        <Button
+          label="Últim pas"
+          type="submit"
+        />
+      </>
+    </LayoutRegisterOrg>
   )
 }
