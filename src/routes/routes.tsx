@@ -71,6 +71,27 @@ export const routesDashboard: any[] = [
   },
 ]
 
+export const routesBiblio: any[] = [
+  {
+    path: 'practiques',
+    element: <>Bones Practiques</>,
+    name: 'Bones Pràctiques',
+    role: ['all'],
+  },
+  {
+    path: 'metodologies',
+    element: <>Metodologies</>,
+    name: 'Metodologies',
+    role: ['all'],
+  },
+  {
+    path: 'noticies',
+    element: <>Noticies</>,
+    name: 'Noticies',
+    role: ['all'],
+  }
+]
+
 export const routesWireframes: any[] = [
   {
     path: '/',
@@ -94,6 +115,7 @@ export const routesWireframes: any[] = [
       ...routesHeader,
       ...routesAuth,
       ...routesDashboard,
+      ...routesBiblio,
     ],
   }
 ]
