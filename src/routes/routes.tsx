@@ -1,11 +1,12 @@
 import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk } from '../pages/Auth'
 import { Inici } from '../pages/Base'
+import { Biblio } from '../pages/Biblio'
 
 export const routesHeader: any[] = [
   {
     path: 'biblioteca',
-    element: <>Biblioteca</>,
+    element: <Biblio />,
     name: 'Biblioteca',
     role: ['all'],
   },
