@@ -6,6 +6,7 @@ type filter = {
   name: string
   value: string
   options: string[]
+  color?: "primary" | "secondary" | "tertiary" | "gray" | "white"
 }
 
 export interface SideSectionFilterProps {
