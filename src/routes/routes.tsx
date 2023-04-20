@@ -1,6 +1,6 @@
 import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk } from '../pages/Auth'
-import { Inici } from '../pages/Base'
+import { Contact, ContactOk, Inici } from '../pages/Base'
 import { Biblio } from '../pages/Biblio'
 
 export const routesHeader: any[] = [
@@ -30,7 +30,7 @@ export const routesHeader: any[] = [
   },
   {
     path: 'contacte',
-    element: <>Contacte</>,
+    element: <Contact />,
     name: 'Contacte',
     role: ['all'],
   },
@@ -59,6 +59,15 @@ export const routesAuth: any[] = [
     path: 'recoverpass-ok',
     element: <RecoverPassOk />,
     name: 'Mail Recover Password',
+    role: ['all'],
+  },
+]
+
+export const routesBase: any[] = [
+  {
+    path: 'contacte-ok',
+    element: <ContactOk />,
+    name: 'Contacte Ok',
     role: ['all'],
   },
 ]
@@ -117,6 +126,7 @@ export const routesWireframes: any[] = [
       ...routesAuth,
       ...routesDashboard,
       ...routesBiblio,
+      ...routesBase,
     ],
   }
 ]
