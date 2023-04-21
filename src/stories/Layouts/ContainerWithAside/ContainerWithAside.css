@@ -1,0 +1,16 @@
+.container-aside {
+  display: grid;
+  grid-template-columns: minmax(340px, 1fr) minmax(200px, 3fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "aside main";
+  grid-gap: 1rem;
+}
+
+.container-aside aside {
+  grid-area: aside;
+  background-color: var(--white);
+}
+
+.container-aside main {
+  grid-area: main;
+}
