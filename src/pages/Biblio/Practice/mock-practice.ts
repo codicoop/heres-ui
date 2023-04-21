@@ -1,3 +1,5 @@
+import { SideSectionFilterProps } from "../../../stories/Organisms/SideSectionFilter/SideSectionFilter"
+
 export const practices = [
   {
     id: 'practice-1',
@@ -31,7 +33,7 @@ export const practices = [
   },
 ]
 
-export const infoSideSectionFilter = {
+export const infoSideSectionFilter: SideSectionFilterProps = {
   title: "Bones pràctiques",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae consequatur maxime temporibus necessitatibus enim eaque inventore, omnis, dolorum assumenda dignissimos voluptate soluta sapiente asperiores, laboriosam velit repudiandae harum architecto nisi earum!",
