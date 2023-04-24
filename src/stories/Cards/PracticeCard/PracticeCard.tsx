@@ -1,4 +1,4 @@
-import { Text, Title } from '../../Typography'
+import { Text } from '../../Typography'
 import './PracticeCard.css'
 
 export interface PracticeCardProps {
