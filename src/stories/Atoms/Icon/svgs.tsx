@@ -220,7 +220,7 @@ export const iconsMap = {
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 export type IconName = keyof typeof iconsMap
-export type IconColor = 'white' | 'black'
+export type IconColor = 'white' | 'black' | 'primary'
 export type IconBackground = 'transparent' | 'base' | 'highlight' | 'inverted' | 'muted' | 'spotlight' | 'fulfilled'
 
 export const options = {

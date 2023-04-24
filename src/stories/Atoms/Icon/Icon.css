@@ -2,3 +2,13 @@
   color: var(--white);
   fill: var(--white);
 }
+
+.icon--black {
+  color: var(--black);
+  fill: var(--black);
+}
+
+.icon--primary {
+  color: var(--primary);
+  fill: var(--primary);
+}
