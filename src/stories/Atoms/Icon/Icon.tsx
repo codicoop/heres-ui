@@ -1,36 +1,47 @@
 import './Icon.css'
-import { iconsMap, options } from './svgs'
+import { iconsMap, IconName, IconSize, IconColor } from './svgs'
 
 export interface IconProps {
-  name: typeof options.names
-  size?: typeof options.sizes
-  color?: typeof options.colors
-  className?: string
+  name: IconName
+  size?: IconSize
+  color?: IconColor
+  className: string
 }
 
 const iconSize: {[key: string]: number} = {
-  xs: 14,
-  sm: 25,
-  md: 35,
-  lg: 50,
-  xl: 70,
+  xs: 16,
+  sm: 24,
+  md: 32,
+  lg: 48,
+  xl: 64,
 }
 
 export function Icon ({
   name,
-  size = 'md',
-  color = 'primary',
-  className
+  size = 'sm',
+  color = 'black',
+  className = '',
 }: IconProps) {
+  const icon = iconsMap[name]
   const mapSize = (size:string) => iconSize[size]
+  const mapedSize = mapSize(size)
+
   return (
     <div
-      className={`icon icon--${size} icon--${color} ${className}`}
+      className={`icon icon--${color} ${className}`}
       style={{ 
-        width: mapSize(size),
-        height: mapSize(size),
+        width: mapedSize,
+        height: mapedSize,
        }}
     >
+      <svg
+        viewBox={icon.viewBox}
+        width={mapedSize}
+        height={mapedSize}
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        {icon.svg}
+      </svg>
     </div>
   )
 }

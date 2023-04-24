@@ -218,6 +218,11 @@ export const iconsMap = {
   }
 }
 
+export type IconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+export type IconName = keyof typeof iconsMap
+export type IconColor = 'white' | 'black'
+export type IconBackground = 'transparent' | 'base' | 'highlight' | 'inverted' | 'muted' | 'spotlight' | 'fulfilled'
+
 export const options = {
   sizes: ['xs', 'sm', 'md', 'lg', 'xl'],
   names: Object.keys(iconsMap),
