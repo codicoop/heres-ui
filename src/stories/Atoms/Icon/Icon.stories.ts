@@ -7,8 +7,19 @@ const meta: Meta<typeof Icon> = {
   component: Icon,
   tags: ['autodocs'],
   args: {
+    name: 'menu',
   },
   argTypes: {
+    size: {
+      control: {
+        type: 'select',
+      },
+    },
+    color: {
+      control: {
+        type: 'select',
+      },
+    },
   },
 };
 
