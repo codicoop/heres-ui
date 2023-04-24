@@ -1,7 +1,7 @@
 import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../pages/Auth'
 import { Contact, ContactOk, Inici } from '../pages/Base'
-import { Biblio, PracticeList } from '../pages/Biblio'
+import { Biblio, NewsList, PracticeList } from '../pages/Biblio'
 
 export const routesHeader: any[] = [
   {
@@ -102,7 +102,7 @@ export const routesBiblio: any[] = [
   },
   {
     path: 'noticies',
-    element: <>Noticies</>,
+    element: <NewsList />,
     name: 'Noticies',
     role: ['all'],
   }
