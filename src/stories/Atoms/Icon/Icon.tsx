@@ -1,11 +1,15 @@
 import './Icon.css'
-import { iconsMap, IconName, IconSize, IconColor } from './svgs'
+import { iconsMap, IconName, IconSize, IconColor, IconHoverColor } from './svgs'
 
 export interface IconProps {
   name: IconName
   size?: IconSize
   color?: IconColor
+  hoverColor?: IconHoverColor
+  selectedColor?: IconColor
+  selected?: boolean
   className?: string
+  onClick?: () => void
 }
 
 const iconSize: {[key: string]: number} = {
@@ -20,19 +24,27 @@ export function Icon ({
   name,
   size = 'sm',
   color = 'black',
+  hoverColor = 'none',
+  selectedColor,
+  selected = false,
   className = '',
+  onClick,
 }: IconProps) {
   const icon = iconsMap[name]
   const mapSize = (size:string) => iconSize[size]
   const mapedSize = mapSize(size)
 
+  const classColor = (selected && selectedColor) ? selectedColor : color
+
   return (
     <div
-      className={`icon icon--${color} ${className}`}
+      className={`icon icon--${classColor} icon--hv-${hoverColor} ${className}`}
       style={{ 
         width: mapedSize,
         height: mapedSize,
-       }}
+        ...(onClick && { cursor: 'pointer' }),
+      }}
+      onClick={onClick}
     >
       <svg
         viewBox={icon.viewBox}
