@@ -20,7 +20,7 @@ export default function Header (): JSX.Element {
   }
 
   return (
-    <header>
+    <header className="header">
       <Text>
         <Link to="/app/inici">
           Logo

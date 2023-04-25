@@ -15,3 +15,15 @@ a {
   color: var(--black);
   text-decoration: none;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 3rem;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 2rem;
+}
