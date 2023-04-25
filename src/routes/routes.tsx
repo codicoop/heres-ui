@@ -2,6 +2,7 @@ import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../pages/Auth'
 import { Contact, ContactOk, Inici } from '../pages/Base'
 import { Biblio, MethodologyList, NewsList, PracticeList } from '../pages/Biblio'
+import { Profile } from '../pages/Dashboard'
 
 export const routesHeader: any[] = [
   {
@@ -81,7 +82,7 @@ export const routesBase: any[] = [
 export const routesDashboard: any[] = [
   {
     path: 'perfil',
-    element: <>Perfil</>,
+    element: <Profile />,
     name: 'Perfil',
     role: ['all'],
   },
