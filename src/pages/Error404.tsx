@@ -7,7 +7,7 @@ export default function Error404 (): JSX.Element {
   return (
     <>
       <Header />
-      <text>Error</text>
+      <Text>Error</Text>
       <Text variant="title" extra>404</Text>
     </>
   )
