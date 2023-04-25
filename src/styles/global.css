@@ -27,3 +27,8 @@ a {
   display: flex;
   gap: 2rem;
 }
+
+/*  */
+.uppercase {
+  text-transform: uppercase;
+}
