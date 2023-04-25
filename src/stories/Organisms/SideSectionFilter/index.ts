@@ -1,1 +1,1 @@
-export { SideSectionFilter as default } from './SideSectionFilter';
+export { SideSectionFilter } from './SideSectionFilter';
