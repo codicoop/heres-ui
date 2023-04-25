@@ -17,6 +17,7 @@ export default function MethodologyList (): JSX.Element {
             key={methodology.id}
             title={methodology.title}
             summary={methodology.summary}
+            saved={methodology.saved}
           />
         ))}
       </main>
