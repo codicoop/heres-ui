@@ -39,12 +39,6 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae consequatur maxime temporibus necessitatibus enim eaque inventore, omnis, dolorum assumenda dignissimos voluptate soluta sapiente asperiores, laboriosam velit repudiandae harum architecto nisi earum!",
   filters: [
     {
-      name: "Any",
-      value: "year",
-      options: ["Tots", "2021", "2020", "2019"],
-      color: "gray",
-    },
-    {
       name: "Metodologia",
       value: "methodology",
       options: ["Tots", "Metodologia 1", "Metodologia 2", "Metodologia 3"],
@@ -57,10 +51,22 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
       color: "white",
     },
     {
-      name: "Tema",
-      value: "theme",
-      options: ["Tots", "Tema 1", "Tema 2", "Tema 3"],
+      name: "Àmbit",
+      value: "scope",
+      options: ["Tots", "Àmbit 1", "Àmbit 2", "Àmbit 3"],
       color: "secondary",
+    },
+    {
+      name: "Organització",
+      value: "org",
+      options: ["Tots", "Org 1", "Org 2", "Org 3"],
+      color: "gray",
+    },
+    {
+      name: "Any",
+      value: "year",
+      options: ["Tots", "2021", "2020", "2019"],
+      color: "gray",
     },
   ],
 }

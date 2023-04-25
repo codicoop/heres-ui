@@ -44,12 +44,6 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, alias cupiditate a pariatur neque dicta quidem dolor itaque obcaecati nihil porro accusantium facilis quos ab dignissimos quod et impedit totam ad.",
   filters: [
     {
-      name: "Organització",
-      value: "org",
-      options: ["Tots", "Org 1", "Org 2", "Org 3"],
-      color: "gray",
-    },
-    {
       name: "Metodologia",
       value: "methodology",
       options: ["Tots", "Metodologia 1", "Metodologia 2", "Metodologia 3"],
@@ -62,10 +56,16 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
       color: "white",
     },
     {
-      name: "Mida organització",
-      value: "org-size",
-      options: ["Tots", "1-5", "6-10", "11-50", "51-200", "201-500", "500+"],
+      name: "Àmbit",
+      value: "scope",
+      options: ["Tots", "Àmbit 1", "Àmbit 2", "Àmbit 3"],
       color: "secondary",
+    },
+    {
+      name: "Data",
+      value: "date",
+      options: ["Tots", "0 - 1 mes", "1 - 3 mesos", "3 - 6 mesos", "6 - 12 mesos", "1 any o +"],
+      color: "gray",
     },
   ],
 }

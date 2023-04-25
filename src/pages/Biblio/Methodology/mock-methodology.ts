@@ -45,9 +45,9 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
       color: "white",
     },
     {
-      name: "Tema",
-      value: "theme",
-      options: ["Tots", "Tema 1", "Tema 2", "Tema 3"],
+      name: "Àmbit",
+      value: "scope",
+      options: ["Tots", "Àmbit 1", "Àmbit 2", "Àmbit 3"],
       color: "secondary",
     },
   ],
