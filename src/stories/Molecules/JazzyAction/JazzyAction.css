@@ -1,0 +1,16 @@
+.jazzy-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.jazzy-action--primary {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0 0.8rem;
+}
+
+.jazzy-action--primary:hover {
+  background-color: var(--primary-hover);
+}
