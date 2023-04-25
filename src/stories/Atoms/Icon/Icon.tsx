@@ -5,7 +5,7 @@ export interface IconProps {
   name: IconName
   size?: IconSize
   color?: IconColor
-  className: string
+  className?: string
 }
 
 const iconSize: {[key: string]: number} = {
