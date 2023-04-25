@@ -12,3 +12,8 @@
   color: var(--primary);
   fill: var(--primary);
 }
+
+.icon--hv-primary:hover {
+  color: var(--primary-hover);
+  fill: var(--primary-hover);
+}
