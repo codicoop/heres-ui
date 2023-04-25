@@ -245,6 +245,7 @@ export const iconsMap = {
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 export type IconName = keyof typeof iconsMap
 export type IconColor = 'white' | 'black' | 'primary'
+export type IconHoverColor = 'primary' | 'none'
 
 export const options = {
   sizes: ['xs', 'sm', 'md', 'lg', 'xl'],
