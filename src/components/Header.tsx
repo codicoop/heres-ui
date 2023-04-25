@@ -4,6 +4,7 @@ import { Text } from "../stories/Typography";
 import { routesHeader } from "../routes";
 import { useContext } from "react";
 import { WireframesContext } from "../config/WireframesContext";
+import { Icon } from "../stories/Atoms";
 
 export default function Header (): JSX.Element {
   const { role, auth, setAuth } = useContext(WireframesContext)
@@ -42,14 +43,30 @@ export default function Header (): JSX.Element {
             ? (
               <>
                 <ItemNav>
-                  <Link to="/app/perfil">Perfil</Link>
+                  <Link to="/app/perfil" title="Perfil">
+                    <Icon
+                      name="shieldAccountOutline"
+                      selectedColor="primary"
+                      hoverColor="primary"
+                    />
+                  </Link>
                 </ItemNav>
                 <ItemNav>
                   <button onClick={handleLogout}>Logout</button>
                 </ItemNav>
               </>
             )
-            : <ItemNav><Link to="/app/login">Login</Link></ItemNav>
+            : (
+              <ItemNav>
+                <Link to="/app/login" title="Login">
+                  <Icon
+                    name="account"
+                    selectedColor="primary"
+                    hoverColor="primary"
+                  />
+                </Link>
+              </ItemNav>
+            )
           }
         </ul>
       </nav>
