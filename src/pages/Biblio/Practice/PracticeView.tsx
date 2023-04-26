@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { ContainerWithAside } from "../../../stories/Layouts";
 import { JazzyAction } from "../../../stories/Molecules";
-import { SideSectionInfo } from "../../../stories/Organisms";
-import { practiceInfo } from "./mock-practice";
+import { ContentBlock, SideSectionInfo } from "../../../stories/Organisms";
+import { practiceContent, practiceInfo } from "./mock-practice";
 
 export default function PracticeView (): JSX.Element {
   return (
@@ -23,7 +23,14 @@ export default function PracticeView (): JSX.Element {
           relatedItems={practiceInfo.relatedItems}
         />
         <main>
-          <h1>Practice View</h1>
+          {practiceContent.map((content, index) => (
+            <ContentBlock
+              key={`content-${index}`}
+              text={content.text}
+              img={content.img}
+              imgSide={content.imgSide}              
+            />
+          ))}
         </main>
       </ContainerWithAside>
     </>
