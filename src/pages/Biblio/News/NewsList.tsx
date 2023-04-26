@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { PostCard } from "../../../stories/Cards"
 import { ContainerWithAside } from "../../../stories/Layouts/ContainerWithAside"
 import { SideSectionFilter } from "../../../stories/Organisms"
@@ -13,11 +14,16 @@ export default function PracticeList (): JSX.Element {
       />
       <main className="news-list">
         {news.map((post) => (
-          <PostCard
+          <Link
+            to={`/app/noticies/${post.id}`}
             key={post.id}
-            title={post.title}
-            summary={post.summary}
-          />
+          >
+            <PostCard
+              key={post.id}
+              title={post.title}
+              summary={post.summary}
+            />
+          </Link>
         ))}
       </main>
     </ContainerWithAside>
