@@ -8,3 +8,7 @@
 .content-block__img-left img {
   order: -1;
 }
+
+.content-block p {
+  padding: 1.6rem;
+}
