@@ -1,0 +1,10 @@
+.content-block:has(> img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.content-block__img-left img {
+  order: -1;
+}
