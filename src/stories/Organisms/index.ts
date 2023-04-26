@@ -1,2 +1,3 @@
-export { SideSectionFilter } from './SideSectionFilter/SideSectionFilter';
 export { GeneralInfoSection } from './GeneralInfoSection';
+export { SideSectionFilter } from './SideSectionFilter';
+export { SideSectionInfo } from './SideSectionInfo';
