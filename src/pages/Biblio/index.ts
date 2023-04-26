@@ -4,3 +4,4 @@ export { default as MethodologyView } from './Methodology/MethodologyView';
 export { default as PracticeList } from './Practice/PracticeList';
 export { default as PracticeView } from './Practice/PracticeView';
 export { default as NewsList } from './News/NewsList';
+export { default as PostView } from './News/PostView';

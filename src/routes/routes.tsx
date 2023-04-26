@@ -1,7 +1,7 @@
 import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../pages/Auth'
 import { Contact, ContactOk, Inici } from '../pages/Base'
-import { Biblio, MethodologyList, MethodologyView, NewsList, PracticeList, PracticeView } from '../pages/Biblio'
+import { Biblio, MethodologyList, MethodologyView, NewsList, PostView, PracticeList, PracticeView } from '../pages/Biblio'
 import { Profile } from '../pages/Dashboard'
 
 export const routesHeader: any[] = [
@@ -120,6 +120,12 @@ export const routesBiblioView: any[] = [
     path: 'metodologies/:id',
     element: <MethodologyView />,
     name: 'Metodologia',
+    role: ['all'],
+  },
+  {
+    path: 'noticies/:id',
+    element: <PostView />,
+    name: 'Noticia',
     role: ['all'],
   }
 ]
