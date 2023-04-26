@@ -1,3 +1,4 @@
+import { GeneralInfoSectionProps } from "../../../stories/Organisms/GeneralInfoSection/GeneralInfoSection"
 import { SideSectionFilterProps } from "../../../stories/Organisms/SideSectionFilter/SideSectionFilter"
 
 export const methodologies = [
@@ -58,3 +59,93 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
     },
   ],
 }
+
+export const generalInfoSection: GeneralInfoSectionProps = {
+  type: 'methodology',
+  title: 'Metodologia 1',
+  sectionInfo: [
+    {
+      category: 'Àmbit',
+      data: 'Àmbit 1'
+    },
+    {
+      category: 'Organització impulsora',
+      data: 'Organització 1'
+    },
+    {
+      category: 'Sectors d’aplicació',
+      data: 'Sector 1, Sector 2, Sector 3'
+    },
+    {
+      category: 'Complexitat d’implementació',
+      data: 'Mitjana'
+    }
+  ],
+  img: 'https://picsum.photos/900/600',
+}
+
+export const relatedType: 'practice' | 'methodology' | 'post' | 'formation' = 'formation'
+
+export const relatedItems: {
+  id: string
+  title: string
+  summary?: string
+  img?: string
+}[] | undefined = [
+  {
+    id: 'formation-1',
+    title: 'Formació 1',
+    img: 'https://picsum.photos/900/600',
+  },
+]
+
+export const methodologyInfo = {
+  generalInfoSection,
+  relatedType,
+  relatedItems
+}
+
+export const methodologyContent: {
+  text?: string
+  img?: string
+  imgSide?: 'left' | 'right'
+}[] = [
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+  },
+  {
+    img: 'https://picsum.photos/350/150',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+    img: 'https://picsum.photos/350/150',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+    img: 'https://picsum.photos/350/150',
+    imgSide: 'left',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+  },
+  {
+    img: 'https://picsum.photos/350/150',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+  },
+  {
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+    img: 'https://picsum.photos/350/150',
+    imgSide: 'left',
+  },
+  {
+    img: 'https://picsum.photos/350/150',
+  },
+]
