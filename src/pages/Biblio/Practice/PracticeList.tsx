@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { PracticeCard } from "../../../stories/Cards"
 import { ContainerWithAside } from "../../../stories/Layouts/ContainerWithAside"
 import { SideSectionFilter } from "../../../stories/Organisms"
@@ -13,11 +14,15 @@ export default function PracticeList (): JSX.Element {
       />
       <main className="practice-list">
         {practices.map((practice) => (
-          <PracticeCard
+          <Link
+            to={`/app/practiques/${practice.id}`}
             key={practice.id}
-            title={practice.title}
-            summary={practice.summary}
-          />
+          >
+            <PracticeCard
+              title={practice.title}
+              summary={practice.summary}
+            />
+          </Link>
         ))}
       </main>
     </ContainerWithAside>
