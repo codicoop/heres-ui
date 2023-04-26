@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { MethodologyCard } from "../../../stories/Cards"
 import { ContainerWithAside } from "../../../stories/Layouts/ContainerWithAside"
 import { SideSectionFilter } from "../../../stories/Organisms"
@@ -13,12 +14,17 @@ export default function MethodologyList (): JSX.Element {
       />
       <main className="methodologies-list">
         {methodologies.map((methodology) => (
-          <MethodologyCard
+          <Link
+            to={`/app/metodologies/${methodology.id}`}
             key={methodology.id}
-            title={methodology.title}
-            summary={methodology.summary}
-            saved={methodology.saved}
-          />
+          >
+            <MethodologyCard
+              key={methodology.id}
+              title={methodology.title}
+              summary={methodology.summary}
+              saved={methodology.saved}
+            />
+          </Link>
         ))}
       </main>
     </ContainerWithAside>
