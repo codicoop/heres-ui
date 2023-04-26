@@ -1,3 +1,4 @@
+import { GeneralInfoSectionProps } from "../../../stories/Organisms/GeneralInfoSection/GeneralInfoSection"
 import { SideSectionFilterProps } from "../../../stories/Organisms/SideSectionFilter/SideSectionFilter"
 
 export const practices = [
@@ -69,4 +70,53 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
       color: "gray",
     },
   ],
+}
+
+export const generalInfoSection: GeneralInfoSectionProps = {
+  type: 'practice',
+  title: 'Pràctica 1',
+  sectionInfo: [
+    {
+      category: 'Data d\'inici',
+      data: 'Març 2022'
+    },
+    {
+      category: 'Data final',
+      data: 'Octubre 2022'
+    },
+    {
+      category: 'Organització',
+      data: 'Organització 1'
+    },
+    {
+      category: 'Àmbit',
+      data: 'Àmbit 1'
+    },
+    {
+      category: 'Metodologia de referència',
+      data: 'Metodologia 1'
+    },
+  ],
+  img: 'https://picsum.photos/900/600',
+}
+
+export const relatedType: 'practice' | 'methodology' | 'post' | 'formation' = 'formation'
+
+export const relatedItems: {
+  id: string
+  title: string
+  summary?: string
+  img?: string
+}[] | undefined = [
+  {
+    id: 'formation-1',
+    title: 'Formació 1',
+    img: 'https://picsum.photos/900/600',
+  },
+]
+
+export const practiceInfo = {
+  generalInfoSection,
+  relatedType,
+  relatedItems
 }
