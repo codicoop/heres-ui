@@ -60,7 +60,7 @@ export default function PracticeAdd (): JSX.Element {
           placeholder="Organització"
           required
         />
-        <div>
+        <div className="form--item--group">
           <Text as="h2" variant="subtitle">
             Període de desenvolupament de la bona pràctica
           </Text>
