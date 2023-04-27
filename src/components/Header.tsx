@@ -69,7 +69,7 @@ export default function Header (): JSX.Element {
       <nav className="header__nav">
         <div className="header__logo">
           <Text>
-            <Link to="/app/inici">
+            <Link to="/app/inici"  onClick={closeMenu}>
               Logo
             </Link>
           </Text>
@@ -79,7 +79,7 @@ export default function Header (): JSX.Element {
             .map((route) => (
               roleAcces(route) && (
                 <ItemNav key={route.path}>
-                  <Link to={route.path}>
+                  <Link to={route.path} onClick={closeMenu}>
                     {route.name}
                   </Link>
                 </ItemNav>
@@ -90,7 +90,7 @@ export default function Header (): JSX.Element {
             ? (
               <>
                 <ItemNav>
-                  <Link to="/app/perfil" title="Perfil">
+                  <Link to="/app/perfil" title="Perfil"  onClick={closeMenu}>
                     <Icon
                       name="shieldAccountOutline"
                       selectedColor="primary"
@@ -105,7 +105,7 @@ export default function Header (): JSX.Element {
             )
             : (
               <ItemNav>
-                <Link to="/app/login" title="Login">
+                <Link to="/app/login" title="Login" onClick={closeMenu}>
                   <Icon
                     name="account"
                     selectedColor="primary"
