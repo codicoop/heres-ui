@@ -14,3 +14,12 @@
 .jazzy-action--primary:hover {
   background-color: var(--primary-hover);
 }
+
+.jazzy-action--secondary {
+  background-color: var(--secondary);
+  padding: 0 0.8rem;
+}
+
+.jazzy-action--secondary:hover {
+  background-color: var(--secondary-hover);
+}
