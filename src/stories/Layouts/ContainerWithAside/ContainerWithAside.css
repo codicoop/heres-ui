@@ -1,16 +1,22 @@
 .container-aside {
   display: grid;
-  grid-template-columns: minmax(340px, 1fr) minmax(200px, 3fr);
   grid-template-rows: 1fr;
-  grid-template-areas: "aside main";
-  grid-gap: 1rem;
+  /* grid-template-areas: "aside main"; */
 }
 
 .container-aside aside {
-  grid-area: aside;
+  /* grid-area: aside; */
   background-color: var(--white);
 }
 
 .container-aside main {
-  grid-area: main;
+  /* grid-area: main; */
+}
+
+@media (min-width: 768px) {
+  .container-aside {
+    grid-template-columns: minmax(340px, 1fr) minmax(200px, 3fr);
+    grid-template-rows: 1fr;
+    /* grid-template-areas: "aside main"; */
+  }
 }

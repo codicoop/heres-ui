@@ -39,9 +39,15 @@ a {
 .header__topbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .topbar__actions {
   display: flex;
+  gap: 10px;
+}
+.topbar__user {
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
 .topbar__burguer {
@@ -102,6 +108,10 @@ a {
   background-color: var(--grey);
 }
 
+.dashboard-menu {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .header__topbar {
     display: none;
@@ -120,5 +130,9 @@ a {
     align-items: center;
     gap: 16px;
     padding-top: 0;
+  }
+
+  .dashboard-menu {
+    display: block;
   }
 }
