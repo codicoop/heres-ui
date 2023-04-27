@@ -40,6 +40,17 @@ form .form--item--group-inline {
   display: flex;
   gap: 0.8rem;
 }
+legend,
+fieldset,
+select,
+textarea,
+input,
+button {
+  font-family: var(--font-family);
+}
+textarea {
+  resize: vertical;
+}
 
 .grid-two-columns {
   grid-column: span 2;
