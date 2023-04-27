@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom"
 import { PracticeCard } from "../../../stories/Cards"
-import { ContainerWithAside } from "../../../stories/Layouts/ContainerWithAside"
-import { SideSectionFilter } from "../../../stories/Organisms"
 import { infoSideSectionFilter, practices } from "./mock-practice"
 import { JazzyAction } from "../../../stories/Molecules"
+import { LayoutDashboard } from "../../../components"
 import { useContext } from "react"
 import { WireframesContext } from "../../../config/WireframesContext"
 
@@ -11,13 +10,8 @@ export default function PracticeList (): JSX.Element {
   const { auth } = useContext(WireframesContext)
 
   return (
-    <ContainerWithAside>
-      <SideSectionFilter
-        title={infoSideSectionFilter.title}
-        description={infoSideSectionFilter.description}
-        filters={infoSideSectionFilter.filters}
-      />
-      <main className="practice-list">
+    <LayoutDashboard infoSideSectionFilter={infoSideSectionFilter} sectionType="practice">
+      <>
         {auth && (
           <Link
             to="/app/practiques/nova"
@@ -40,7 +34,7 @@ export default function PracticeList (): JSX.Element {
             />
           </Link>
         ))}
-      </main>
-    </ContainerWithAside>
+      </>
+    </LayoutDashboard>
   )
 }
