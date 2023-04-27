@@ -1,3 +1,11 @@
+form {
+  width: 100%;
+  max-width: 330px;
+}
+.form--item {
+  margin-bottom: 40px;
+  width: 100%;
+}
 .form--item label {
   font-size: 1.8rem;
   font-weight: 700;

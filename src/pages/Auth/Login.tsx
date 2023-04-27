@@ -4,6 +4,7 @@ import { Title } from "../../stories/Typography";
 import { Button } from "../../stories/Molecules";
 import { useContext } from "react";
 import { WireframesContext } from "../../config/WireframesContext";
+import './login.css'
 
 export default function Login (): JSX.Element {
   const { setAuth } = useContext(WireframesContext)
@@ -15,24 +16,24 @@ export default function Login (): JSX.Element {
     navigate('/app/inici')
   }
   return (
-    <>
+    <div className="login page">
       <Title underline>Iniciar Sessió</Title>
       <form onSubmit={handleSubmit}>
         <Input label="Email" type="email" name="email" />
         <Input label="Contrasenya" type="password" name="password" />
-        <div>
+        <div className="form__actions">
           <Link to="/app/recoverpass">
             Recuperar contrasenya
           </Link>
           <Button
             type="submit"
-            label="Iniciar Sessió"
+            label="Entrar"
           />
         </div>
-        <Link to="/app/register/0" className="button button--base">
+        <Link to="/app/register/0" className="login__signup button button--base">
           Registrar-se
         </Link>
       </form>
-    </>
+    </div>
   )
 }
