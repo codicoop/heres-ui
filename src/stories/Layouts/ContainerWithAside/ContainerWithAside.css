@@ -1,16 +1,14 @@
 .container-aside {
   display: grid;
   grid-template-rows: 1fr;
-  /* grid-template-areas: "aside main"; */
+  height: calc(100vh - 56px);
+  position: sticky;
+  top: 56px;
+  width: 100%;
 }
 
 .container-aside aside {
-  /* grid-area: aside; */
-  background-color: var(--white);
-}
-
-.container-aside main {
-  /* grid-area: main; */
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -18,5 +16,20 @@
     grid-template-columns: minmax(340px, 1fr) minmax(200px, 3fr);
     grid-template-rows: 1fr;
     /* grid-template-areas: "aside main"; */
+  }
+
+  .container-aside aside {
+    display: block;
+    background-color: var(--white);
+    height: calc(100vh - 56px);
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+
+  .container-aside main {
+    background-color: var(--white);
+    height: calc(100vh - 56px);
+    overflow-y: scroll;
   }
 }
