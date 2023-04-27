@@ -15,7 +15,7 @@ body {
   height: 100%;
 }
 .page {
-  min-height: calc(100% - 70px);
+  min-height: calc(100% - 55px);
 }
 
 a {
@@ -97,7 +97,7 @@ a {
   background-color: var(--grey);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .header__topbar {
     display: none;
   }
