@@ -1,7 +1,6 @@
 import { useContext } from "react"
 import { WireframesContext } from "../config/WireframesContext"
 import { Title } from "../stories/Typography"
-import { Icon } from "../stories/Atoms"
 import { Link } from "react-router-dom"
 import { Input } from "../stories/Forms"
 import { DropdownMenu } from "../stories/Molecules/DropdownMenu"
@@ -14,6 +13,7 @@ export type filter = {
 
 export interface DashboardMenuProps {
   filters?: filter[]
+  defaultActive?: string
 }
 
 export default function DashboardMenu ({
@@ -31,12 +31,62 @@ export default function DashboardMenu ({
         <Title>Panell d'{nameRole}</Title>
         <ul>
           <DropdownMenu text="Perfil">
+            <>
+              <li>
+                <Link to="/app/perfil">Veure perfil</Link>
+              </li>
+              <li>
+                <a>Actualitzar les dades</a>
+              </li>
+              {role === 'org' && (
+                <li>
+                  <a>Veure autodiagnostic</a>
+                </li>
+              )}
+            </>
+          </DropdownMenu>
+          {role === 'org' && (
+            <DropdownMenu text="Gestió">
+              <li>
+                <a>Gestió de treballadores</a>
+              </li>
+            </DropdownMenu>
+          )}
+          {role === 'user' && (
+            <DropdownMenu text="Organització">
+              <li>
+                <a>Informació general</a>
+              </li>
+              <li>
+                <a>Autodiagnosi de l'organització</a>
+              </li>
+              <li>
+                <a>Canvi d'organització</a>
+              </li>
+            </DropdownMenu>
+          )}
+          <DropdownMenu text="Contingut guardat">
             <li>
-              <Link to="/app/perfil">Veure perfil</Link>
+              <a>Metodologies</a>
             </li>
-            <li>
-              <a href="/app/perfil/editar">Actualitzar les dades</a>
-            </li>
+          </DropdownMenu>
+          <DropdownMenu text="Formació">
+            <>
+              <li>
+                <a>Formacions en curs</a>
+              </li>
+              <li>
+                <a>Formacions finalitzades</a>
+              </li>
+              <li>
+                <a>Formacions per començar</a>
+              </li>
+              {role === 'user' && (
+                <li>
+                  <a>Descarregar CV formatiu</a>
+                </li>
+              )}
+            </>
           </DropdownMenu>
         </ul>
       </div>
