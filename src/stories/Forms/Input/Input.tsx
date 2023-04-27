@@ -33,7 +33,7 @@ export function Input ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        required={required}
+        // required={required}
         className={className}
         {...props}
       />
