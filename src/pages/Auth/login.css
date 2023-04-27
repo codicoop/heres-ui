@@ -22,6 +22,7 @@ form {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .login__signup {
   margin-top: 80px;
