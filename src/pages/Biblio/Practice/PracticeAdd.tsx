@@ -1,3 +1,4 @@
+import { LayoutDashboard } from "../../../components";
 import { Input, Textarea } from "../../../stories/Forms";
 import { Button } from "../../../stories/Molecules";
 import { Text } from "../../../stories/Typography";
@@ -22,7 +23,7 @@ import { Text } from "../../../stories/Typography";
 
 export default function PracticeAdd (): JSX.Element {
   return (
-    <>
+    <LayoutDashboard sectionType="practice">
       <form>
         <Input
           label="Títol"
@@ -106,6 +107,6 @@ export default function PracticeAdd (): JSX.Element {
           color="primary"
         />
       </form>
-    </>
+    </LayoutDashboard>
   )
 }
