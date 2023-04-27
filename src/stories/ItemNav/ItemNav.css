@@ -9,3 +9,15 @@
   border-bottom: 3px solid var(--secondary);
   font-weight: bold;
 }
+
+@media (min-width: 768px) {
+  .item-nav {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .item-nav {
+    font-size: 1.8rem;
+  }
+}
