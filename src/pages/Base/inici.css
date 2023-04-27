@@ -1,0 +1,37 @@
+
+
+.inici {
+  display: flex;
+  flex-direction: column;
+
+}
+.inici__intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inici__intro img {
+  display: none;
+}
+.inici__intro h1 {
+  width: 70%;
+}
+/* .inici__text {} */
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.go-to-sections--item .text--body {
+  display: none;
+}
+
+
+@media (min-width: 800px) {
+  .inici__intro {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .go-to-sections--item .text--body {
+    display: block;
+  }
+}
