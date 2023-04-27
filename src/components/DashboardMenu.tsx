@@ -4,6 +4,7 @@ import { Title } from "../stories/Typography"
 import { Icon } from "../stories/Atoms"
 import { Link } from "react-router-dom"
 import { Input } from "../stories/Forms"
+import { DropdownMenu } from "../stories/Molecules/DropdownMenu"
 
 export type filter = {
   name: string
@@ -25,24 +26,18 @@ export default function DashboardMenu ({
   if (role === 'org') nameRole = 'organització'
 
   return (
-    <aside>
+    <aside className="dashboard-menu">
       <div>
         <Title>Panell d'{nameRole}</Title>
         <ul>
-          <li>
-            <div>
-              <p>Perfil</p>
-              <Icon name="chevronDown" />
-            </div>
-            <ul>
-              <li>
-                <Link to="/app/perfil">Veure perfil</Link>
-              </li>
-              <li>
-                <a href="/app/perfil/editar">Editar perfil</a>
-              </li>
-            </ul>
-          </li>
+          <DropdownMenu text="Perfil">
+            <li>
+              <Link to="/app/perfil">Veure perfil</Link>
+            </li>
+            <li>
+              <a href="/app/perfil/editar">Actualitzar les dades</a>
+            </li>
+          </DropdownMenu>
         </ul>
       </div>
       {filters && (
