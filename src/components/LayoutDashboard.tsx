@@ -6,7 +6,7 @@ import { SideSectionFilter } from "../stories/Organisms";
 import { SideSectionFilterProps } from "../stories/Organisms/SideSectionFilter/SideSectionFilter";
 
 export interface LayoutDashboardProps {
-  infoSideSectionFilter: SideSectionFilterProps
+  infoSideSectionFilter?: SideSectionFilterProps
   sectionType: string
   children: JSX.Element | JSX.Element[]
 }
@@ -23,11 +23,13 @@ export default function LayoutDashboard ({
       {auth ? (
         <DashboardMenu />
       ) : (
-        <SideSectionFilter
-          title={infoSideSectionFilter.title}
-          description={infoSideSectionFilter.description}
-          filters={infoSideSectionFilter.filters}
-        />
+        infoSideSectionFilter && (
+          <SideSectionFilter
+            title={infoSideSectionFilter.title}
+            description={infoSideSectionFilter.description}
+            filters={infoSideSectionFilter.filters}
+          />
+        )
       )}
       <main className={`${sectionType}-list`}>
         {children}
