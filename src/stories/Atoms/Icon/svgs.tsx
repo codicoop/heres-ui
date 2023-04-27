@@ -263,6 +263,30 @@ export const iconsMap = {
         />
       </>
     ),
+  },
+  chevronDown: {
+    viewBox: '0 0 24 24',
+    svg: (
+      <>
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M7.41 8.58L12 13.17L16.59 8.58L18 10L12 16L6 10L7.41 8.58Z"
+        />
+      </>
+    ),
+  },
+  chevronRight: {
+    viewBox: '0 0 24 24',
+    svg: (
+      <>
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M8.59009 16.58L13.1701 12L8.59009 7.41L10.0001 6L16.0001 12L10.0001 18L8.59009 16.58Z"
+        />
+      </>
+    ),
   }
 }
 
