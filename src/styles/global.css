@@ -33,7 +33,7 @@ a {
   max-width: 1024px;
   margin: 0 auto;
 }
-.header__logo, .header__nav {
+.header__logo, .header__nav, .header__user {
   display: none;
 }
 .header__topbar {
@@ -68,6 +68,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 9;
 }
 .header.is-open .header__nav {
   height: 100%;
@@ -130,6 +131,9 @@ a {
     align-items: center;
     gap: 16px;
     padding-top: 0;
+  }
+  .header__user {
+    display: block;
   }
 
   .dashboard-menu {

@@ -40,15 +40,35 @@ export default function Header (): JSX.Element {
         </div>
         <div className="topbar__actions">
           <div className="topbar__user">
-            <ItemNav>
-              <Link to="/app/login" title="Login">
-                <Icon
-                  name="account"
-                  selectedColor="primary"
-                  hoverColor="primary"
-                />
-              </Link>
-            </ItemNav>
+            {auth 
+              ? (
+                <>
+                  <ItemNav>
+                    <Link to="/app/perfil" title="Perfil"  onClick={closeMenu}>
+                      <Icon
+                        name="shieldAccountOutline"
+                        selectedColor="primary"
+                        hoverColor="primary"
+                      />
+                    </Link>
+                  </ItemNav>
+                  <ItemNav>
+                    <button onClick={handleLogout}>Logout</button>
+                  </ItemNav>
+                </>
+              )
+              : (
+                <ItemNav>
+                  <Link to="/app/login" title="Login" onClick={closeMenu}>
+                    <Icon
+                      name="account"
+                      selectedColor="primary"
+                      hoverColor="primary"
+                    />
+                  </Link>
+                </ItemNav>
+              )
+            }
           </div>
           <div className="topbar__burguer" onClick={openMenu}>
             <Icon
@@ -89,7 +109,7 @@ export default function Header (): JSX.Element {
           {auth 
             ? (
               <>
-                <ItemNav>
+                <ItemNav className="header__user">
                   <Link to="/app/perfil" title="Perfil"  onClick={closeMenu}>
                     <Icon
                       name="shieldAccountOutline"
@@ -98,13 +118,13 @@ export default function Header (): JSX.Element {
                     />
                   </Link>
                 </ItemNav>
-                <ItemNav>
+                <ItemNav className="header__user">
                   <button onClick={handleLogout}>Logout</button>
                 </ItemNav>
               </>
             )
             : (
-              <ItemNav>
+              <ItemNav className="header__user">
                 <Link to="/app/login" title="Login" onClick={closeMenu}>
                   <Icon
                     name="account"
