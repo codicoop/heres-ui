@@ -10,10 +10,14 @@ export interface ContentBlockProps {
 export function ContentBlock ({
   text,
   img,
-  imgSide = 'right',
-}: ContentBlockProps) {  
+  imgSide,
+}: ContentBlockProps) {
+  let classes = 'content-block'
+  const positionClass = imgSide || (img ? 'right' : 'left')
+  classes += ` content-block__img-${positionClass}`
+
   return (
-    <div className={`content-block content-block__img-${imgSide}`}>
+    <div className={classes}>
       {text && <Text>{text}</Text>}
       {img && <img src={img} alt='img' />}
     </div>
