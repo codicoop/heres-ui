@@ -6,17 +6,13 @@ import { infoSideSectionFilter, news } from "./mock-news"
 import { useContext } from "react"
 import { WireframesContext } from "../../../config/WireframesContext"
 import { JazzyAction } from "../../../stories/Molecules"
+import { LayoutDashboard } from "../../../components"
 
 export default function PracticeList (): JSX.Element {
   const { role, auth } = useContext(WireframesContext)
   return (
-    <ContainerWithAside>
-      <SideSectionFilter
-        title={infoSideSectionFilter.title}
-        description={infoSideSectionFilter.description}
-        filters={infoSideSectionFilter.filters}
-      />
-      <main className="news-list">
+    <LayoutDashboard infoSideSectionFilter={infoSideSectionFilter} sectionType="news">
+      <>
         {auth && role === "admin" && (
           <Link
             to="/app/noticies/nova"
@@ -40,7 +36,7 @@ export default function PracticeList (): JSX.Element {
             />
           </Link>
         ))}
-      </main>
-    </ContainerWithAside>
+      </>
+    </LayoutDashboard>
   )
 }
