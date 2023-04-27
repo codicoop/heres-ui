@@ -1,7 +1,7 @@
 import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../pages/Auth'
 import { Contact, ContactOk, Inici } from '../pages/Base'
-import { Biblio, MethodologyAdd, MethodologyList, MethodologyView, NewsList, PostAdd, PostView, PracticeAdd, PracticeList, PracticeView } from '../pages/Biblio'
+import { Biblio, MethodologyAdd, MethodologyEdit, MethodologyList, MethodologyView, NewsList, PostAdd, PostEdit, PostView, PracticeAdd, PracticeEdit, PracticeList, PracticeView } from '../pages/Biblio'
 import { Profile } from '../pages/Dashboard'
 
 export const routesHeader: any[] = [
@@ -120,7 +120,13 @@ export const routesBiblioActions: any[] = [
     path: 'practiques/nova',
     element: <PracticeAdd />,
     name: 'Nova Pràctica',
-    role: ['user', 'org', 'admin'],
+    role: ['org', 'admin'],
+  },
+  {
+    path: 'practiques/editar/:id',
+    element: <PracticeEdit />,
+    name: 'Editar Pràctica',
+    role: ['org', 'admin'],
   },
   {
     path: 'metodologies/:id',
@@ -135,6 +141,12 @@ export const routesBiblioActions: any[] = [
     role: ['admin'],
   },
   {
+    path: 'metodologies/editar/:id',
+    element: <MethodologyEdit />,
+    name: 'Editar Metodologia',
+    role: ['admin'],
+  },
+  {
     path: 'noticies/:id',
     element: <PostView />,
     name: 'Noticia',
@@ -144,6 +156,12 @@ export const routesBiblioActions: any[] = [
     path: 'noticies/nova',
     element: <PostAdd />,
     name: 'Nova Noticia',
+    role: ['admin'],
+  },
+  {
+    path: 'noticies/editar/:id',
+    element: <PostEdit />,
+    name: 'Editar Noticia',
     role: ['admin'],
   }
 ]
