@@ -1,7 +1,7 @@
 import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../pages/Auth'
 import { Contact, ContactOk, Inici } from '../pages/Base'
-import { Biblio, MethodologyList, MethodologyView, NewsList, PostView, PracticeList, PracticeView } from '../pages/Biblio'
+import { Biblio, MethodologyList, MethodologyView, NewsList, PostView, PracticeAdd, PracticeList, PracticeView } from '../pages/Biblio'
 import { Profile } from '../pages/Dashboard'
 
 export const routesHeader: any[] = [
@@ -109,12 +109,18 @@ export const routesBiblio: any[] = [
   }
 ]
 
-export const routesBiblioView: any[] = [
+export const routesBiblioActions: any[] = [
   {
     path: 'practiques/:id',
     element: <PracticeView />,
     name: 'Pràctica',
     role: ['all'],
+  },
+  {
+    path: 'practiques/nova',
+    element: <PracticeAdd />,
+    name: 'Nova Pràctica',
+    role: ['user', 'org', 'admin'],
   },
   {
     path: 'metodologies/:id',
@@ -154,7 +160,7 @@ export const routesWireframes: any[] = [
       ...routesAuth,
       ...routesDashboard,
       ...routesBiblio,
-      ...routesBiblioView,
+      ...routesBiblioActions,
       ...routesBase,
     ],
   }
