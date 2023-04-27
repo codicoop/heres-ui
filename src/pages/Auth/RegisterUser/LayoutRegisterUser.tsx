@@ -26,7 +26,7 @@ export default function LayoutRegisterUser ({
   }
 
   return (
-    <div className="register-user">
+    <div className="register-user page">
       <div className="register-user__container">
         <Title underline>Registrar-se</Title>
         <Text>

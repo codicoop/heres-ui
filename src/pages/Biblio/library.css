@@ -1,11 +1,11 @@
-.inici {
+.library {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   height: calc(100% - 55px);
 }
-.inici__container {
+.library__container {
   width: 100%;
   height: 100%;
   max-width: 1024px;
@@ -14,7 +14,7 @@
   align-items: flex-start;
   gap: 35px;
 }
-.inici__intro {
+.library__intro {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -22,58 +22,49 @@
   padding: 30px;
   background-color: var(--primary);
 }
-.inici__img {
+.library__img {
   display: none;
 }
-.inici__intro h1 {
+.library__intro h1 {
   width: 70%;
 }
-
-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: auto;
-  width: 100%;
-}
-.go-to-sections--item .text--body {
-  display: none;
+.library__content {
+  padding: 30px;
 }
 
 @media (min-width: 678px) {
-  .inici__intro {
+  .library__intro {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding: 0;
     max-height: 200px;
   }
-  .inici__img {
+  .library__img {
     display: block;
     grid-column: 1 / span 3;
     overflow: clip;
     max-height: 200px;
-    margin-top: -48px;
   }
-  .inici__img img  {
+  .library__img img  {
     object-fit: cover;
   }
-  .inici__arrow {
+  .library__arrow {
     grid-column: 6;
     padding-right: 30px;
     justify-self: end;
   }
-  .inici__intro h1 {
+  .library__intro h1 {
     padding: 20px 30px;
   }
-  .inici__text .text--body {
+  .library__content .text--body {
     columns: 2;
   }
   .go-to-sections--item .text--body {
     display: block;
   }
 }
-
 @media (min-width: 1024px) {
-  .inici__img {
+  .library__img {
     grid-column: 1 / span 4;
   }
 }

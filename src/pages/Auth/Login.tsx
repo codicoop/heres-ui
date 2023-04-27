@@ -16,7 +16,7 @@ export default function Login (): JSX.Element {
     navigate('/app/inici')
   }
   return (
-    <div className="login">
+    <div className="login page">
       <div className="login__container">
         <Title underline>Iniciar Sessió</Title>
         <form onSubmit={handleSubmit}>

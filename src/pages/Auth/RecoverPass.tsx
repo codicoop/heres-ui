@@ -12,18 +12,20 @@ export default function RecoverPass (): JSX.Element {
   }
 
   return (
-    <>
-      <Title underline>Reinicia la contrasenya</Title>
-      <form onSubmit={handleSubmit}>
-        <Input 
-          label="Introdueix el correu amb el que et vas registrar"
-          type="email" name="email"
-        />
-        <Button
-          type="submit"
-          label="Enviar"
-        />
-      </form>
-    </>
+    <div className="register page">
+      <div className="register__container">
+        <Title underline>Reinicia la contrasenya</Title>
+        <form onSubmit={handleSubmit}>
+          <Input 
+            label="Introdueix el correu amb el que et vas registrar"
+            type="email" name="email"
+          />
+          <Button
+            type="submit"
+            label="Enviar"
+          />
+        </form>
+      </div>
+    </div>
   )
 }
