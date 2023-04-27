@@ -5,6 +5,14 @@
   justify-content: flex-start;
   padding: 120px 30px;
 }
+.login__container {
+  padding: 30px;
+  width: 100%;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 form {
   display: flex;
   flex-direction: column;

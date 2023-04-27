@@ -1,39 +1,39 @@
-.register {
+.register-user {
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-.register__container {
+.register-user__container {
   padding: 30px;
   width: 100%;
   max-width: 330px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 35px;
 }
-.register h1 {
-  margin-bottom: 150px;
+.register-user .text {
+  padding-bottom: 55px;
 }
-.register .button {
+.register-user form {
+  padding-top: 60px;
+  height: 100%;
+}
+
+.register-user form .button {
   align-self: flex-end;
+  margin-top: auto;
 }
 
 @media (min-width: 678px) {
-  .register {
+  .register-user {
     padding-top: 220px;
-  }
-  .register h1 {
-    margin-bottom: 94px;
   }
 }
 @media (min-width: 1024px) {
-  .register {
+  .register-user {
     padding-top: 167px;
-  }
-  .register h1 {
-    margin-bottom: 64px;
   }
 }

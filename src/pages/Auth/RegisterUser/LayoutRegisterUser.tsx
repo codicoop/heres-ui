@@ -1,6 +1,8 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { Text, Title } from "../../../stories/Typography";
 import { Steps } from "../../../stories/Forms";
+import './register_user.css'
+
 
 export default function LayoutRegisterUser ({
   children,
@@ -24,18 +26,20 @@ export default function LayoutRegisterUser ({
   }
 
   return (
-    <>
-      <Title underline>Registrar-se</Title>
-      <Text>
-        Els camps es podran modificar quan es tingui el perfil ja creat
-      </Text>
-      <Steps
-        steps={totelSteps}
-        progress={stepPosition}
-      />
-      <form onSubmit={handleSubmit}>
-        {children}
-      </form>
-    </>
+    <div className="register-user">
+      <div className="register-user__container">
+        <Title underline>Registrar-se</Title>
+        <Text>
+          Els camps es podran modificar quan es tingui el perfil ja creat
+        </Text>
+        <Steps
+          steps={totelSteps}
+          progress={stepPosition}
+        />
+        <form onSubmit={handleSubmit}>
+          {children}
+        </form>
+      </div>
+    </div>
   )
 }
