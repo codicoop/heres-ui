@@ -6,18 +6,14 @@ import { infoSideSectionFilter, methodologies } from "./mock-methodology"
 import { useContext } from "react"
 import { WireframesContext } from "../../../config/WireframesContext"
 import { JazzyAction } from "../../../stories/Molecules"
+import { LayoutDashboard } from "../../../components"
 
 export default function MethodologyList (): JSX.Element {
   const { role, auth } = useContext(WireframesContext)
 
   return (
-    <ContainerWithAside>
-      <SideSectionFilter
-        title={infoSideSectionFilter.title}
-        description={infoSideSectionFilter.description}
-        filters={infoSideSectionFilter.filters}
-      />
-      <main className="methodologies-list">
+    <LayoutDashboard infoSideSectionFilter={infoSideSectionFilter} sectionType="methodology">
+      <>
         {auth && role === "admin" && (
           <Link
             to="/app/metodologies/nova"
@@ -42,7 +38,7 @@ export default function MethodologyList (): JSX.Element {
             />
           </Link>
         ))}
-      </main>
-    </ContainerWithAside>
+      </>
+    </LayoutDashboard>
   )
 }
