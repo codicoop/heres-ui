@@ -1,6 +1,7 @@
 import { LayoutRegisterOrg } from ".";
 import { Input } from "../../../stories/Forms";
 import { Button } from "../../../stories/Molecules";
+import '../RegisterUser/register_user.css'
 
 export default function RegisterOrg3 (): JSX.Element {
   return (

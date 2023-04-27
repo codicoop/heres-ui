@@ -1,6 +1,7 @@
 import { LayoutRegisterUser } from ".";
 import { Input } from "../../../stories/Forms";
 import { Button } from "../../../stories/Molecules";
+import './register_user.css'
 
 export default function RegisterUser1 (): JSX.Element {
   return (

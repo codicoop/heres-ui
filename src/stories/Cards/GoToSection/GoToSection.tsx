@@ -11,6 +11,7 @@ export function GoToSection ({
   name,
   color,
   description,
+  wide
 }: section): JSX.Element {
   return (
     <section 

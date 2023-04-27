@@ -19,14 +19,61 @@ export default function Header (): JSX.Element {
     navigate('/app/inici')
   }
 
+  function openMenu(){
+    const header = document.querySelector(".header")
+    header?.classList.add("is-open")
+  }
+  function closeMenu(){
+    const header = document.querySelector(".header")
+    header?.classList.remove("is-open")
+  }
+
   return (
     <header className="header">
-      <Text>
-        <Link to="/app/inici">
-          Logo
-        </Link>
-      </Text>
-      <nav>
+      <div className="header__topbar topbar">
+        <div className="topbar__logo">
+          <Text>
+            <Link to="/app/inici">
+              Logo
+            </Link>
+          </Text>
+        </div>
+        <div className="topbar__actions">
+          <div className="topbar__user">
+            <ItemNav>
+              <Link to="/app/login" title="Login">
+                <Icon
+                  name="account"
+                  selectedColor="primary"
+                  hoverColor="primary"
+                />
+              </Link>
+            </ItemNav>
+          </div>
+          <div className="topbar__burguer" onClick={openMenu}>
+            <Icon
+              name="menu"
+              selectedColor="primary"
+              hoverColor="primary"
+            />
+          </div>
+          <div className="topbar__close" onClick={closeMenu}>
+            <Icon
+              name="closeThick"
+              selectedColor="primary"
+              hoverColor="primary"
+            />
+          </div>
+        </div>
+      </div>
+      <nav className="header__nav">
+        <div className="header__logo">
+          <Text>
+            <Link to="/app/inici">
+              Logo
+            </Link>
+          </Text>
+        </div>
         <ul>
           {routesHeader
             .map((route) => (

@@ -5,6 +5,7 @@ import { Title } from "../../stories/Typography";
 import { Button } from "../../stories/Molecules";
 import { RegisterOrg1, RegisterOrg2, RegisterOrg3 } from "./RegisterOrg";
 import { RegisterUser1, RegisterUser2, RegisterUser3, RegisterUser4 } from "./RegisterUser";
+import './register.css'
 
 export default function Register (): JSX.Element {
   const { role, setRole } = useContext(WireframesContext)
@@ -34,19 +35,21 @@ export default function Register (): JSX.Element {
   }
 
   return (
-    <>
-      <Title underline>Registrar-se</Title>
-      <Button
-        label="Com a persona"
-        onClick={handleUser}
-        bigBtn
-      />
-      <Button
-        label="Com a organització"
-        relevance="base"
-        onClick={handleOrg}
-        bigBtn
-      />
-    </>
+    <div className="register page">
+      <div className="register__container">
+        <Title underline>Registrar-se</Title>
+        <Button
+          label="Com a persona"
+          onClick={handleUser}
+          bigBtn
+        />
+        <Button
+          label="Com a organització"
+          relevance="base"
+          onClick={handleOrg}
+          bigBtn
+        />
+      </div>
+    </div>
   )
 }
