@@ -9,6 +9,7 @@ export interface InputProps {
   value?: string,
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void,
   className?: string,
+  required?: boolean,
 }
 
 export function Input ({
@@ -19,11 +20,12 @@ export function Input ({
   value,
   onChange,
   className,
+  required = false,
   ...props
 }: InputProps): JSX.Element {
   return (
     <div className={`form--item`}>
-      <label htmlFor={name}>{label}</label>
+      <label htmlFor={name}>{label} {required && <span className="form--item--required">*</span>}</label>
       <input
         id={name}
         name={name}
@@ -31,8 +33,9 @@ export function Input ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        {...props}
+        required={required}
         className={className}
+        {...props}
       />
     </div>
   )
