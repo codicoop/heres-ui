@@ -1,7 +1,7 @@
 import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../pages/Auth'
 import { Contact, ContactOk, Inici } from '../pages/Base'
-import { Biblio, MethodologyList, MethodologyView, NewsList, PostAdd, PostView, PracticeAdd, PracticeList, PracticeView } from '../pages/Biblio'
+import { Biblio, MethodologyAdd, MethodologyList, MethodologyView, NewsList, PostAdd, PostView, PracticeAdd, PracticeList, PracticeView } from '../pages/Biblio'
 import { Profile } from '../pages/Dashboard'
 
 export const routesHeader: any[] = [
@@ -127,6 +127,12 @@ export const routesBiblioActions: any[] = [
     element: <MethodologyView />,
     name: 'Metodologia',
     role: ['all'],
+  },
+  {
+    path: 'metodologies/nova',
+    element: <MethodologyAdd />,
+    name: 'Nova Metodologia',
+    role: ['admin'],
   },
   {
     path: 'noticies/:id',
