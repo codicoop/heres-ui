@@ -5,4 +5,5 @@ export { default as PracticeAdd } from './Practice/PracticeAdd';
 export { default as PracticeList } from './Practice/PracticeList';
 export { default as PracticeView } from './Practice/PracticeView';
 export { default as NewsList } from './News/NewsList';
+export { default as PostAdd } from './News/PostAdd';
 export { default as PostView } from './News/PostView';
