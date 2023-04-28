@@ -1,4 +1,4 @@
-import { Input } from '../../Forms'
+import { Icon } from '../../Atoms'
 import { Text, Title } from '../../Typography'
 import './SideSectionFilter.css'
 
@@ -39,13 +39,16 @@ export function SideSectionFilter ({
             </select>
           </div>
         ))}
-        <Input
-          label="Buscar"
-          name="search"
-          type="text"
-          placeholder="Cerca..."
-          className="side-section-filter__search"
-        />
+        <label className="input__search" htmlFor="search">
+          <input name="search" type="text" placeholder="Cerca..." />
+          <div className="input__search__icon">
+            <Icon
+              name="search"
+              selectedColor="primary"
+              hoverColor="primary"
+            />
+          </div>
+        </label>
       </form>
     </aside>
   )
