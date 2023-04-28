@@ -9,8 +9,16 @@
   overflow: hidden;
 }
 
+.container-aside main {
+  padding: 1.4rem 0;
+}
+
 .container-aside aside {
   display: none;
+}
+
+.container-aside main > * {
+  padding: 0 3rem;
 }
 
 @media (min-width: 768px) {
@@ -28,7 +36,6 @@
   }
 
   .container-aside main {
-    background-color: var(--white);
     height: calc(100vh - 56px);
     overflow-y: scroll;
   }
