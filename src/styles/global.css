@@ -172,4 +172,7 @@ textarea {
   .dashboard-menu {
     display: block;
   }
+  .dashboard-menu__title {
+    padding: 1.4rem 3rem;
+  }
 }

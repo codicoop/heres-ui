@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { WireframesContext } from "../config/WireframesContext"
-import { Title } from "../stories/Typography"
+import { Text } from "../stories/Typography"
 import { Link } from "react-router-dom"
 import { Input } from "../stories/Forms"
 import { DropdownMenu } from "../stories/Molecules/DropdownMenu"
@@ -28,7 +28,9 @@ export default function DashboardMenu ({
   return (
     <aside className="dashboard-menu">
       <div>
-        <Title>Panell d'{nameRole}</Title>
+        <Text as="h2" variant="title" className="dashboard-menu__title">
+          Panell d'{nameRole}
+        </Text>
         <ul>
           <DropdownMenu text="Perfil">
             <>
