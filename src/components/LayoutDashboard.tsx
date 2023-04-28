@@ -7,7 +7,7 @@ import { SideSectionFilterProps } from "../stories/Organisms/SideSectionFilter/S
 
 export interface LayoutDashboardProps {
   infoSideSectionFilter?: SideSectionFilterProps
-  sectionType: string
+  sectionType?: string
   children: JSX.Element | JSX.Element[]
 }
 
