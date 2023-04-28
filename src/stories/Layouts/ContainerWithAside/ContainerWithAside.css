@@ -9,8 +9,8 @@
   overflow: hidden;
 }
 
-.container-aside main {
-  padding: 1.4rem 0;
+.container-aside main a {
+  padding: 0;
 }
 
 .container-aside aside {
