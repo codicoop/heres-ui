@@ -4,6 +4,7 @@ import { Text } from "../stories/Typography"
 import { Link } from "react-router-dom"
 import { Input } from "../stories/Forms"
 import { DropdownMenu } from "../stories/Molecules/DropdownMenu"
+import { Icon } from "../stories/Atoms"
 
 export type filter = {
   name: string
@@ -106,13 +107,16 @@ export default function DashboardMenu ({
               </select>
             </div>
           ))}
-          <Input
-            label="Buscar"
-            name="search"
-            type="text"
-            placeholder="Cerca..."
-            className="side-section-filter__search"
-          />
+          <label className="input__search" htmlFor="search">
+            <input name="search" type="text" placeholder="Cerca..." />
+            <div className="input__search__icon">
+              <Icon
+                name="search"
+                selectedColor="primary"
+                hoverColor="primary"
+              />
+            </div>
+          </label>
         </form>
       )}
     </aside>

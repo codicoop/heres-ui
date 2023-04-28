@@ -21,7 +21,7 @@ export default function LayoutDashboard ({
   return (
     <ContainerWithAside>
       {auth ? (
-        <DashboardMenu />
+        <DashboardMenu filters={infoSideSectionFilter?.filters} />
       ) : (
         infoSideSectionFilter && (
           <SideSectionFilter
