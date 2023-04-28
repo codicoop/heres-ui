@@ -44,11 +44,15 @@ export default function PostView (): JSX.Element {
       <Content>
         <>
           {role === "admin" && (
-            <JazzyAction
-              text="Editar notícia"
-              icon="pencil"
-              color="secondary"
-            />
+            <Link
+              to="/app/noticies/editar/1"
+            >
+              <JazzyAction
+                text="Editar notícia"
+                icon="pencil"
+                color="secondary"
+              />
+            </Link>
           )}
           <GeneralInfoSection
             title={postInfo.generalInfoSection.title}
