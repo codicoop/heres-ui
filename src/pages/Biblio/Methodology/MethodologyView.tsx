@@ -44,11 +44,15 @@ export default function MethodologyView (): JSX.Element {
       <Content>
         <>
           {role === "admin" && (
-            <JazzyAction
-              text="Editar metodologia"
-              icon="pencil"
-              color="secondary"
-            />
+            <Link
+              to="/app/metodologies/editar/1"
+            >
+              <JazzyAction
+                text="Editar metodologia"
+                icon="pencil"
+                color="secondary"
+              />
+            </Link>
           )}
           <GeneralInfoSection
             title={methodologyInfo.generalInfoSection.title}

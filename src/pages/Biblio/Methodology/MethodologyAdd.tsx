@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { LayoutDashboard } from "../../../components";
 import { Input, Textarea } from "../../../stories/Forms";
 import { Button } from "../../../stories/Molecules";
@@ -30,9 +31,16 @@ import { Text } from "../../../stories/Typography";
 
 
 export default function MethodologyAdd (): JSX.Element {
+  const navigate = useNavigate()
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    navigate('/app/metodologies/1')
+  }
+
   return (
     <LayoutDashboard sectionType="methodology">
-      <form>
+      <form onSubmit={handleSubmit}>
         <Input
           label="Nom de la metodologia"
           name="title"
