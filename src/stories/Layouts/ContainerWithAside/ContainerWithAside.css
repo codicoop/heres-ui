@@ -19,12 +19,11 @@
   }
 
   .container-aside aside {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--white);
     height: calc(100vh - 56px);
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0;
   }
 
   .container-aside main {
