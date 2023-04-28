@@ -17,10 +17,6 @@
   display: none;
 }
 
-.container-aside main > * {
-  padding: 0 3rem;
-}
-
 @media (min-width: 768px) {
   .container-aside {
     grid-template-columns: minmax(340px, 1fr) minmax(200px, 3fr);
