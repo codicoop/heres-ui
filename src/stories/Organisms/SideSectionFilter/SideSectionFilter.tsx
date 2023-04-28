@@ -21,9 +21,11 @@ export function SideSectionFilter ({
   filters,
 }: SideSectionFilterProps) {
   return (
-    <aside>
+    <aside className="side-section-filter">
       <div>
-        <Title>{title}</Title>
+        <Text as="h2" variant="title" className="side-section-filter__title">
+          {title}
+        </Text>
         <Text>{description}</Text>
       </div>
       <form className="side-section-filter">

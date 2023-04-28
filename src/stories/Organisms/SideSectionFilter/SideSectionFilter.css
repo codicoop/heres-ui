@@ -8,6 +8,10 @@
   max-width: 100%;
 }
 
+.side-section-filter > div > * {
+  padding: 1.4rem 3rem;
+}
+
 .input__search {
   width: 100%;
   display: flex;
