@@ -2,7 +2,7 @@ import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../pages/Auth'
 import { Contact, ContactOk, Inici } from '../pages/Base'
 import { Biblio, MethodologyAdd, MethodologyEdit, MethodologyList, MethodologyView, NewsList, PostAdd, PostEdit, PostView, PracticeAdd, PracticeEdit, PracticeList, PracticeView } from '../pages/Biblio'
-import { Profile } from '../pages/Dashboard'
+import { Profile, ProfileEdit } from '../pages/Dashboard'
 
 export const routesHeader: any[] = [
   {
@@ -86,6 +86,12 @@ export const routesDashboard: any[] = [
     name: 'Perfil',
     role: ['all'],
   },
+  {
+    path: 'perfil/editar',
+    element: <ProfileEdit />,
+    name: 'Editar Perfil',
+    role: ['all'],
+  }
 ]
 
 export const routesBiblio: any[] = [

@@ -36,7 +36,7 @@ export default function DashboardMenu ({
                 <Link to="/app/perfil">Veure perfil</Link>
               </li>
               <li>
-                <a>Actualitzar les dades</a>
+                <Link to="/app/perfil/editar">Actualitzar les dades</Link>
               </li>
               {role === 'org' && (
                 <li>
