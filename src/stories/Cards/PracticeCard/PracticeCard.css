@@ -1,0 +1,8 @@
+.practice-card {
+  padding: 1.6rem 0;
+}
+
+.practice-card > * {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
