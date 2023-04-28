@@ -1,14 +1,23 @@
 .jazzy-action {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   cursor: pointer;
+  gap: 0.8rem;
+  background-color: var(--real-white);
+  padding: 0.8rem 3rem;
+}
+
+.jazzy-action:hover {
+  background-color: var(--white);
+}
+
+.jazzy-action--right {
+  flex-direction: row-reverse;
 }
 
 .jazzy-action--primary {
   background-color: var(--primary);
   color: var(--white);
-  padding: 0 0.8rem;
 }
 
 .jazzy-action--primary:hover {
@@ -17,7 +26,6 @@
 
 .jazzy-action--secondary {
   background-color: var(--secondary);
-  padding: 0 0.8rem;
 }
 
 .jazzy-action--secondary:hover {

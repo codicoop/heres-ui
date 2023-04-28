@@ -20,22 +20,18 @@ export function JazzyAction ({
 }: JazzyActionProps) {
   return (
     <div
-      className={`jazzy-action jazzy-action--${color}`}
+      className={`jazzy-action jazzy-action--${color} jazzy-action--${iconSide}`}
       onClick={onClick}
     >
-      {(icon && iconSide === 'left') && (
+      {icon && (
         <Icon 
           name={icon}
           {...(color === 'primary' && { color: 'white' })}
         />
       )}
-      <Text>{text}</Text>
-      {(icon && iconSide === 'right') && (
-        <Icon
-          name={icon}
-          {...(color === 'primary' && { color: 'white' })}
-        />
-      )}
+      <Text>
+        {text}
+      </Text>
     </div>
   )
 }
