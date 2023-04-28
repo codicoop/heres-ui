@@ -1,4 +1,5 @@
 import { Icon } from '../../Atoms'
+import { SelectFilter } from '../../Molecules'
 import './Filters.css'
 
 export interface FiltersProps {
@@ -16,18 +17,15 @@ export function Filters ({
   className,
 }: FiltersProps) {
   return (
-    <form className={className} onSubmit={(e) => e.preventDefault()}>
+    <form className={`${className} form-filter`} onSubmit={(e) => e.preventDefault()}>
       {filters.map((filter) => (
-        <div key={filter.name}>
-          <label htmlFor={filter.name}>{filter.name}</label>
-          <select name={filter.name} id={filter.name}>
-            {filter.options.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </div>
+        <SelectFilter 
+          key={filter.name}
+          name={filter.name}
+          options={filter.options}
+          color={filter.color}
+          value={filter.value}
+        />
       ))}
       <label className="input__search" htmlFor="search">
         <input name="search" type="text" placeholder="Cerca..." />
