@@ -35,16 +35,8 @@
   color: var(--white);
 }
 
-.select-filter--primary:hover {
-  background-color: var(--primary-dark);
-}
-
 .select-filter--secondary {
   background-color: var(--secondary);
-}
-
-.select-filter--secondary:hover {
-  background-color: var(--secondary-dark);
 }
 
 .select-filter--tertiary {
@@ -52,26 +44,12 @@
   color: var(--white);
 }
 
-.select-filter--tertiary:hover {
-  background-color: var(--tertiary-dark);
-}
-
 .select-filter--gray {
   background-color: var(--gray);
   color: var(--white);
 }
 
-.select-filter--gray:hover {
-  background-color: var(--white);
-  color: var(--black);
-}
-
 .select-filter--white {
   background-color: var(--white);
   color: var(--black);
-}
-
-.select-filter--white:hover {
-  background-color: var(--black);
-  color: var(--white);
 }
