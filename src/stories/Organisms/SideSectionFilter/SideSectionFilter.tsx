@@ -1,5 +1,6 @@
 import { Icon } from '../../Atoms'
 import { Text, Title } from '../../Typography'
+import { Filters } from '../Filters'
 import './SideSectionFilter.css'
 
 type filter = {
@@ -28,30 +29,7 @@ export function SideSectionFilter ({
         </Text>
         <Text>{description}</Text>
       </div>
-      <form className="side-section-filter">
-        {filters.map((filter) => (
-          <div key={filter.name}>
-            <label htmlFor={filter.name}>{filter.name}</label>
-            <select name={filter.name} id={filter.name}>
-              {filter.options.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-          </div>
-        ))}
-        <label className="input__search" htmlFor="search">
-          <input name="search" type="text" placeholder="Cerca..." />
-          <div className="input__search__icon">
-            <Icon
-              name="search"
-              selectedColor="primary"
-              hoverColor="primary"
-            />
-          </div>
-        </label>
-      </form>
+      <Filters filters={filters} className='side-section-filter' />
     </aside>
   )
 }
