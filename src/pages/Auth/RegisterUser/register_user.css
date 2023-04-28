@@ -27,7 +27,7 @@
   margin-top: auto;
 }
 
-@media (min-width: 678px) {
+@media (min-width: 768px) {
   .register-user {
     padding-top: 220px;
   }

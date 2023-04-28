@@ -21,7 +21,7 @@
   align-self: flex-end;
 }
 
-@media (min-width: 678px) {
+@media (min-width: 768px) {
   .register {
     padding-top: 220px;
   }

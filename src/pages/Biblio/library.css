@@ -32,7 +32,7 @@
   padding: 30px;
 }
 
-@media (min-width: 678px) {
+@media (min-width: 768px) {
   .library__intro {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
