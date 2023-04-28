@@ -29,7 +29,7 @@
   width: 70%;
 }
 
-section {
+.inici__section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: auto;

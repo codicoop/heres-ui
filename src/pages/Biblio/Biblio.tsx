@@ -32,7 +32,7 @@ export default function Biblio (): JSX.Element {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
           </Text>
         </div>
-        <section>
+        <section className="inici__section">
           <Link to="/app/practiques">
             <GoToSection
               name="Bones pràctiques"
