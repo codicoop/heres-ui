@@ -44,11 +44,15 @@ export default function PracticeView (): JSX.Element {
       <Content>
         <>
           {role === "org" && (
-            <JazzyAction
-              text="Editar pràctica"
-              icon="pencil"
-              color="secondary"
-            />
+            <Link
+              to="/app/practiques/editar/1"
+            >
+              <JazzyAction
+                text="Editar pràctica"
+                icon="pencil"
+                color="secondary"
+              />
+            </Link>
           )}
           <GeneralInfoSection
             title={practiceInfo.generalInfoSection.title}
