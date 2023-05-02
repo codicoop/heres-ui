@@ -1,0 +1,47 @@
+.formation-card {
+  padding: 1.6rem 0;
+  position: relative;
+  border: 2px solid var(--white);
+}
+
+.formation-card:hover {
+  border: 2px solid var(--primary);
+}
+
+.formation-card > * {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.formation-card__price {
+  position: absolute;
+  top: 1.6rem;
+  right: 3rem;
+  background-color: var(--secondary);
+  padding: 0.8rem 1.6rem;
+  font-size: 1.4rem;
+  color: var(--black);
+}
+
+.formation-card__level {
+  position: absolute;
+  bottom: 1.6rem;
+  right: 3rem;
+  background-color: var(--white);
+  padding: 0.8rem 1.6rem;
+  font-size: 1.4rem;
+  color: var(--black);
+}
+
+.formation-card__footer {
+  padding-top: 1.6rem;
+}
+
+.formation-card__footer span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: underline;
+  text-decoration-color: var(--secondary);
+  text-decoration-thickness: 0.2rem
+}
