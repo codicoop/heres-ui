@@ -8,12 +8,16 @@ export interface MethodologyCardProps {
   title: string
   summary?: string
   saved: boolean
+  ambit: string
+  sectors: string[] | string
 }
 
 export function MethodologyCard ({
   title,
   summary,
   saved = false,
+  ambit,
+  sectors,
 }: MethodologyCardProps) {
   const [iconSwitch, setIconSwitch] = useState<IconName>('bookmarkOutline')
 
@@ -26,9 +30,15 @@ export function MethodologyCard ({
     if (iconSwitch === 'bookmark') setIconSwitch('bookmarkOutline')
   }
 
+  const printSectors = () => {
+    if (typeof sectors === 'string') return sectors
+    if (sectors.length > 2) return `${sectors[0]}, ${sectors[1]}...`
+    return sectors.join(', ')
+  }
+
   return (
     <article className='methodology-card'>
-      <header>
+      <header className='methodology-card__header'>
         <Text  variant='subtitle' as='h2'>
           {title}
         </Text>
@@ -43,6 +53,24 @@ export function MethodologyCard ({
       <Text>
         {summary}
       </Text>
+      <footer className='methodology-card__footer'>
+        <div className='methodology-card__footer--info methodology-card__ambit'>
+          <Text size='small'>
+            {ambit}
+          </Text>
+          <Text as='h3' variant="body" extra>
+            Àmbit
+          </Text>
+        </div>
+        <div className='methodology-card__footer--info methodology-card__sector'>
+          <Text size='small'>
+            {typeof sectors === 'string' ? sectors : printSectors()}
+          </Text>
+          <Text as='h3' variant="body" extra>
+            Sector
+          </Text>
+        </div>
+      </footer>
     </article>
   )
 }
