@@ -6,3 +6,33 @@
   padding-right: 3rem;
   padding-left: 3rem;
 }
+
+.post-card__footer {
+  display: flex;
+  align-items: center;
+  padding-top: 1.6rem;
+  gap: 2.4rem;
+}
+
+.post-card__footer--info {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  flex-basis: 10rem;
+}
+
+.post-card__methodology {
+  flex-basis: auto;
+}
+
+.post-card__sector,
+.post-card__methodology {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .post-card__sector,
+  .post-card__methodology {
+    display: block;
+  }
+}
