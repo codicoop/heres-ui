@@ -35,6 +35,8 @@ export default function MethodologyList (): JSX.Element {
               title={methodology.title}
               summary={methodology.summary}
               saved={methodology.saved}
+              ambit={methodology.ambit}
+              sectors={methodology.sectors}
             />
           </Link>
         ))}
