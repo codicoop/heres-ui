@@ -6,6 +6,7 @@ export interface TextProps {
   variant?: 'body' | 'title' | 'subtitle',
   extra?: boolean,
   as?: 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
+  size?: 'small' | 'medium' | 'large',
   className?: string,
 }
 
@@ -14,6 +15,7 @@ export function Text ({
   variant = 'body',
   extra,
   as = 'p',
+  size,
   className,
 }: TextProps) {
   // const [DefaultVariant, setDefaultVariant] = useState(variant)
@@ -33,8 +35,9 @@ export function Text ({
   // }, [DefaultVariant])
 
   const addExtra = extra ? '__extra' : ''
+  const addSize = size ? `text--${variant}__${size}` : ''
 
-  const textClass = `text text--${variant}${addExtra} ${className ? className : ''}`
+  const textClass = `text text--${variant}${addExtra} ${addSize} ${className ? className : ''}`
 
   // if (DefaultAs === 'h1') {
   //   return (
