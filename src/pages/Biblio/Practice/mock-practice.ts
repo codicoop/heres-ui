@@ -6,31 +6,49 @@ export const practices = [
     id: 'practice-1',
     title: 'Practice Card',
     summary: 'This is a practice card',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodologyRef: 'Metodologia 1'
   },
   {
     id: 'practice-2',
     title: 'Practice Card 2',
     summary: 'This is a practice card 2',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodologyRef: 'Metodologia 1'
   },
   {
     id: 'practice-3',
     title: 'Practice Card 3',
     summary: 'This is a practice card 3',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodologyRef: 'Metodologia 1'
   },
   {
     id: 'practice-4',
     title: 'Practice Card 4',
     summary: 'This is a practice card 4',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodologyRef: 'Metodologia 1'
   },
   {
     id: 'practice-5',
     title: 'Practice Card 5',
     summary: 'This is a practice card 5',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodologyRef: 'Metodologia 1'
   },
   {
     id: 'practice-6',
     title: 'Practice Card 6',
     summary: 'This is a practice card 6',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodologyRef: 'Metodologia 1'
   },
 ]
 
