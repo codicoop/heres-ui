@@ -7,7 +7,32 @@
   padding-left: 3rem;
 }
 
-.methodology-card header {
+.methodology-card__header {
   display: flex;
   justify-content: space-between;
+}
+
+.methodology-card__footer {
+  display: flex;
+  align-items: center;
+  padding-top: 1.6rem;
+  gap: 2.4rem;
+}
+
+.methodology-card__footer--info {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  flex-basis: 10rem;
+}
+
+.methodology-card__sector {
+  display: none;
+  flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  .methodology-card__sector {
+    display: block;
+  }
 }
