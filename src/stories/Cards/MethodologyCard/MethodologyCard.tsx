@@ -67,7 +67,7 @@ export function MethodologyCard ({
             {typeof sectors === 'string' ? sectors : printSectors()}
           </Text>
           <Text as='h3' variant="body" extra>
-            Sector
+            Sectors d'aplicació
           </Text>
         </div>
       </footer>
