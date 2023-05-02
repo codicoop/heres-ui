@@ -31,6 +31,9 @@ export default function PracticeList (): JSX.Element {
             <PracticeCard
               title={practice.title}
               summary={practice.summary}
+              ambit={practice.ambit}
+              sector={practice.sector}
+              methodology={practice.methodologyRef}
             />
           </Link>
         ))}
