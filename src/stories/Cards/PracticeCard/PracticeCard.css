@@ -6,3 +6,33 @@
   padding-right: 3rem;
   padding-left: 3rem;
 }
+
+.practice-card__footer {
+  display: flex;
+  align-items: center;
+  padding-top: 1.6rem;
+  gap: 2.4rem;
+}
+
+.practice-card__footer--info {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  flex-basis: 10rem;
+}
+
+.practice-card__methodology {
+  flex-basis: auto;
+}
+
+.practice-card__sector,
+.practice-card__methodology {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .practice-card__sector,
+  .practice-card__methodology {
+    display: block;
+  }
+}
