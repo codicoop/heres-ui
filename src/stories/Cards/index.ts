@@ -1,3 +1,4 @@
+export { FormationCard } from './FormationCard';
 export { GoToSections } from './GoToSections';
 export { GoToSection } from './GoToSection';
 export { MethodologyCard } from './MethodologyCard';
