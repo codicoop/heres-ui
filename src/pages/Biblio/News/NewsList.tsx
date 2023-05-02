@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom"
 import { PostCard } from "../../../stories/Cards"
-import { ContainerWithAside } from "../../../stories/Layouts/ContainerWithAside"
-import { SideSectionFilter } from "../../../stories/Organisms"
 import { infoSideSectionFilter, news } from "./mock-news"
 import { useContext } from "react"
 import { WireframesContext } from "../../../config/WireframesContext"
@@ -33,6 +31,9 @@ export default function PracticeList (): JSX.Element {
               key={post.id}
               title={post.title}
               summary={post.summary}
+              ambit={post.ambit}
+              sector={post.sector}
+              methodology={post.methodologyRef}
             />
           </Link>
         ))}
