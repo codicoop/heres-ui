@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { WireframesContext } from "../../../config/WireframesContext"
 import { Title } from "../../../stories/Typography"
 import { InfoSection } from "../../../stories/Molecules"
-import { userInfo } from "./mock-profile"
+import { orgInfo, userInfo } from "./mock-profile"
 import { LayoutDashboard } from "../../../components"
 
 export default function Profile () {
@@ -24,10 +24,10 @@ export default function Profile () {
           ))
         )}
         {role === 'org' && (
-          Object.values(userInfo).map((info, index) => (
+          Object.values(orgInfo).map((info, index) => (
             <InfoSection
               key={`info-org-${index}`}
-              category={Object.keys(userInfo)[index]}
+              category={Object.keys(orgInfo)[index]}
               data={info}
             />
           ))
