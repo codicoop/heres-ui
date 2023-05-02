@@ -6,36 +6,54 @@ export const news = [
     id: 'news-1',
     title: 'Post Card',
     summary: 'This is a post card. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodologyRef: 'Metodologia 1'
   },
   {
     id: 'news-2',
     title: 'Post Card 2',
     summary: 'This is a post card 2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
+    ambit: 'Social',
+    sector: 'Sector social',
   },
   {
     id: 'news-3',
     title: 'Post Card 3',
     summary: 'This is a post card 3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
+    ambit: 'Social',
+    sector: 'Sector social',
   },
   {
     id: 'news-4',
     title: 'Post Card 4',
     summary: 'This is a post card 4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodologyRef: 'Metodologia 1'
   },
   {
     id: 'news-5',
     title: 'Post Card 5',
     summary: 'This is a post card 5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodologyRef: 'Metodologia 1'
   },
   {
     id: 'news-6',
     title: 'Post Card 6',
     summary: 'This is a post card 6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
+    ambit: 'Social',
+    sector: 'Sector social',
   },
   {
     id: 'news-7',
     title: 'Post Card 7',
     summary: 'This is a post card 7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodologyRef: 'Metodologia 1'
   }
 ]
 
