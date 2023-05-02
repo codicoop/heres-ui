@@ -3,6 +3,7 @@ import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../page
 import { Contact, ContactOk, Inici } from '../pages/Base'
 import { Biblio, MethodologyAdd, MethodologyEdit, MethodologyList, MethodologyView, NewsList, PostAdd, PostEdit, PostView, PracticeAdd, PracticeEdit, PracticeList, PracticeView } from '../pages/Biblio'
 import { Profile, ProfileEdit } from '../pages/Dashboard'
+import { Formation } from '../pages/Formation'
 
 export const routesHeader: any[] = [
   {
@@ -19,7 +20,7 @@ export const routesHeader: any[] = [
   },
   {
     path: 'formacio',
-    element: <>Formació</>,
+    element: <Formation />,
     name: 'Formació',
     role: ['all'],
   },
@@ -115,6 +116,15 @@ export const routesBiblio: any[] = [
   }
 ]
 
+export const routesFormation: any[] = [
+  {
+    path: 'formacio/view',
+    element: <p>Aquí es redirigirà a una formació externa o es visualitzaria una plataforma d'e-learning</p>,
+    name: 'Formació',
+    role: ['user'],
+  }
+]
+
 export const routesBiblioActions: any[] = [
   {
     path: 'practiques/:id',
@@ -197,6 +207,7 @@ export const routesWireframes: any[] = [
       ...routesDashboard,
       ...routesBiblio,
       ...routesBiblioActions,
+      ...routesFormation,
       ...routesBase,
     ],
   }
