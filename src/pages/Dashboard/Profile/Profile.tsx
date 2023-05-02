@@ -4,13 +4,14 @@ import { Title } from "../../../stories/Typography"
 import { InfoSection } from "../../../stories/Molecules"
 import { orgInfo, userInfo } from "./mock-profile"
 import { LayoutDashboard } from "../../../components"
+import "./profile.css"
 
 export default function Profile () {
   const { role } = useContext(WireframesContext)
 
   return (
     <LayoutDashboard>
-      <>
+      <section className="profile">
         <Title underline>
           Perfil de l'{role}
         </Title>
@@ -32,7 +33,7 @@ export default function Profile () {
             />
           ))
         )}
-      </>
+      </section>
     </LayoutDashboard>
   )
 }
