@@ -137,10 +137,8 @@ export default function ProfileEdit (): JSX.Element {
   return (
     <LayoutDashboard sectionType="news">
       <form onSubmit={handleSubmit}>
-        <>
-          {role === "user" && formUser}
-          {role === "org" && formOrg}
-        </>
+        {role === "user" && formUser()}
+        {role === "org" && formOrg()}
         <Button
           type="submit"
           label="Actualitzar informació"
