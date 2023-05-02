@@ -9,6 +9,9 @@ const meta: Meta<typeof PostCard> = {
   args: {
     title: 'Post Title on Card',
     summary: 'Post summary on Card. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae neque fuga.',
+    ambit: 'Social',
+    sector: 'Sector social',
+    methodology: 'Metodologia 1',
   },
   argTypes: {
   },
