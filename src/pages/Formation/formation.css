@@ -1,0 +1,10 @@
+.formation__info {
+  padding: 0 3rem;
+}
+
+.formation__section {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
