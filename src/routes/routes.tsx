@@ -1,6 +1,6 @@
 import { Error404, Home, InitWireframe } from '../pages'
 import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../pages/Auth'
-import { Contact, ContactOk, Inici } from '../pages/Base'
+import { Contact, ContactOk, Inici, OnlyUserAccess } from '../pages/Base'
 import { Biblio, MethodologyAdd, MethodologyEdit, MethodologyList, MethodologyView, NewsList, PostAdd, PostEdit, PostView, PracticeAdd, PracticeEdit, PracticeList, PracticeView } from '../pages/Biblio'
 import { Profile, ProfileEdit } from '../pages/Dashboard'
 import { Formation } from '../pages/Formation'
@@ -78,6 +78,12 @@ export const routesBase: any[] = [
     name: 'Contacte Ok',
     role: ['all'],
   },
+  {
+    path: 'nomes-usuaris',
+    element: <OnlyUserAccess />,
+    name: 'Només Usuaris',
+    role: ['admin', 'org'],
+  }
 ]
 
 export const routesDashboard: any[] = [
