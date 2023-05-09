@@ -2,9 +2,7 @@ import { useContext } from "react"
 import { WireframesContext } from "../config/WireframesContext"
 import { Text } from "../stories/Typography"
 import { Link } from "react-router-dom"
-import { Input } from "../stories/Forms"
 import { DropdownMenu } from "../stories/Molecules/DropdownMenu"
-import { Icon } from "../stories/Atoms"
 import { Filters } from "../stories/Organisms"
 
 export type filter = {
@@ -27,6 +25,11 @@ export default function DashboardMenu ({
   if (role === 'user') nameRole = 'usuari'
   if (role === 'org') nameRole = 'organització'
 
+  const closeDashboardMenu = () => {
+    const dashboardMenu = document.querySelector('.header__nav--dashboard')
+    dashboardMenu?.classList.remove('is-open')
+  }
+
   return (
     <aside className="dashboard-menu">
       <div>
@@ -37,13 +40,17 @@ export default function DashboardMenu ({
           <DropdownMenu text="Perfil">
             <>
               <li>
-                <Link to="/app/perfil">Veure perfil</Link>
+                <Link to="/app/perfil" onClick={closeDashboardMenu}>
+                  Veure perfil
+                </Link>
               </li>
               <li>
-                <Link to="/app/perfil/editar">Actualitzar les dades</Link>
+                <Link to="/app/perfil/editar" onClick={closeDashboardMenu}>
+                  Actualitzar les dades
+                </Link>
               </li>
               {role === 'org' && (
-                <li>
+                <li onClick={closeDashboardMenu}>
                   <a>Veure autodiagnostic</a>
                 </li>
               )}
@@ -51,42 +58,42 @@ export default function DashboardMenu ({
           </DropdownMenu>
           {role === 'org' && (
             <DropdownMenu text="Gestió">
-              <li>
+              <li onClick={closeDashboardMenu}>
                 <a>Gestió de treballadores</a>
               </li>
             </DropdownMenu>
           )}
           {role === 'user' && (
             <DropdownMenu text="Organització">
-              <li>
+              <li onClick={closeDashboardMenu}>
                 <a>Informació general</a>
               </li>
-              <li>
+              <li onClick={closeDashboardMenu}>
                 <a>Autodiagnosi de l'organització</a>
               </li>
-              <li>
+              <li onClick={closeDashboardMenu}>
                 <a>Canvi d'organització</a>
               </li>
             </DropdownMenu>
           )}
           <DropdownMenu text="Contingut guardat">
-            <li>
+            <li onClick={closeDashboardMenu}>
               <a>Metodologies</a>
             </li>
           </DropdownMenu>
           <DropdownMenu text="Formació">
             <>
-              <li>
+              <li onClick={closeDashboardMenu}>
                 <a>Formacions en curs</a>
               </li>
-              <li>
+              <li onClick={closeDashboardMenu}>
                 <a>Formacions finalitzades</a>
               </li>
-              <li>
+              <li onClick={closeDashboardMenu}>
                 <a>Formacions per començar</a>
               </li>
               {role === 'user' && (
-                <li>
+                <li onClick={closeDashboardMenu}>
                   <a>Descarregar CV formatiu</a>
                 </li>
               )}

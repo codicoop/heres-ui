@@ -5,6 +5,7 @@ import { routesHeader } from "../routes";
 import { useContext } from "react";
 import { WireframesContext } from "../config/WireframesContext";
 import { Icon } from "../stories/Atoms";
+import DashboardMenu from "./DashboardMenu";
 
 export default function Header (): JSX.Element {
   const { role, auth, setAuth } = useContext(WireframesContext)
@@ -16,16 +17,31 @@ export default function Header (): JSX.Element {
 
   const handleLogout = () => {
     setAuth(false)
+    closeDashboardMenu()
     navigate('/app/inici')
   }
 
   function openMenu(){
     const header = document.querySelector(".header")
+    const dashboardMenu = document.querySelector(".header__nav--dashboard")
     header?.classList.add("is-open")
+    dashboardMenu?.classList.remove("is-open")
   }
   function closeMenu(){
     const header = document.querySelector(".header")
     header?.classList.remove("is-open")
+  }
+
+  function toggleDashboardMenu() {
+    const dashboardMenu = document.querySelector(".header__nav--dashboard")
+    const header = document.querySelector(".header")
+    dashboardMenu?.classList.toggle("is-open")
+    header?.classList.remove("is-open")
+  }
+
+  function closeDashboardMenu() {
+    const dashboardMenu = document.querySelector(".header__nav--dashboard")
+    dashboardMenu?.classList.remove("is-open")
   }
 
   return (
@@ -33,7 +49,7 @@ export default function Header (): JSX.Element {
       <div className="header__topbar topbar">
         <div className="topbar__logo">
           <Text>
-            <Link to="/app/inici">
+            <Link to="/app/inici" onClick={closeDashboardMenu}>
               Logo
             </Link>
           </Text>
@@ -44,13 +60,22 @@ export default function Header (): JSX.Element {
               ? (
                 <>
                   <ItemNav>
-                    <Link to="/app/perfil" title="Perfil"  onClick={closeMenu}>
+                    <Link to="/app/perfil" title="Perfil"  onClick={closeMenu} className="no-mobile">
                       <Icon
                         name="shieldAccountOutline"
                         selectedColor="primary"
                         hoverColor="primary"
                       />
                     </Link>
+                    <div className="only-mobile"
+                      onClick={toggleDashboardMenu}
+                    >
+                      <Icon
+                        name="shieldAccountOutline"
+                        selectedColor="primary"
+                        hoverColor="primary"
+                      />
+                    </div>
                   </ItemNav>
                   <ItemNav>
                     <button onClick={handleLogout}>Logout</button>
@@ -136,6 +161,9 @@ export default function Header (): JSX.Element {
             )
           }
         </ul>
+      </nav>
+      <nav className="header__nav--dashboard">
+        <DashboardMenu />
       </nav>
     </header>
   )
