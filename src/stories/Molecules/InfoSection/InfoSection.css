@@ -1,5 +1,16 @@
 .info-section {
   display: flex;
-  gap: 1.6rem;
-  align-items: flex-end;
+  flex-direction: column;
+}
+
+.info-section ~ .info-section {
+  margin-top: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .info-section {
+    flex-direction: row;
+    gap: 1.6rem;
+    align-items: center;
+  }
 }
