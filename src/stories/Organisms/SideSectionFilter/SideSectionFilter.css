@@ -15,7 +15,6 @@
 .input__search {
   width: 100%;
   display: flex;
-  align-items: center;
   height: auto;
 }
 
@@ -36,7 +35,7 @@
 
 .input__search__icon {
   display: block;
-  height: 100%;
+  height: auto;
   width: 10rem;
   display: flex;
   align-items: center;
