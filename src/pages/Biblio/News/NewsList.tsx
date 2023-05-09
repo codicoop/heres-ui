@@ -5,6 +5,7 @@ import { useContext } from "react"
 import { WireframesContext } from "../../../config/WireframesContext"
 import { JazzyAction } from "../../../stories/Molecules"
 import { LayoutDashboard } from "../../../components"
+import { Filters } from "../../../stories/Organisms"
 
 export default function PracticeList (): JSX.Element {
   const { role, auth } = useContext(WireframesContext)
@@ -22,21 +23,26 @@ export default function PracticeList (): JSX.Element {
             />
           </Link>
         )}
-        {news.map((post) => (
-          <Link
-            to={`/app/noticies/${post.id}`}
-            key={post.id}
-          >
-            <PostCard
+        <section className="library__filters">
+          <Filters filters={infoSideSectionFilter.filters} />
+        </section>
+        <section className="library__list">
+          {news.map((post) => (
+            <Link
+              to={`/app/noticies/${post.id}`}
               key={post.id}
-              title={post.title}
-              summary={post.summary}
-              ambit={post.ambit}
-              sector={post.sector}
-              methodology={post.methodologyRef}
-            />
-          </Link>
-        ))}
+            >
+              <PostCard
+                key={post.id}
+                title={post.title}
+                summary={post.summary}
+                ambit={post.ambit}
+                sector={post.sector}
+                methodology={post.methodologyRef}
+              />
+            </Link>
+          ))}
+        </section>
       </>
     </LayoutDashboard>
   )
