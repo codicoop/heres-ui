@@ -6,9 +6,14 @@ import './formation.css'
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { WireframesContext } from "../../config/WireframesContext";
+import { OnlyUserAccess } from "../Base";
+import { Login } from "../Auth";
 
 export default function Formation (): JSX.Element {
-  const { auth } = useContext(WireframesContext)
+  const { auth, role } = useContext(WireframesContext)
+
+  if (auth && role !== 'user') return <OnlyUserAccess />
+  if (!auth) return <Login />
 
   return (
     <LayoutDashboard>

@@ -1,21 +1,10 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { WireframesContext } from "../../config/WireframesContext";
 import { Text, Title } from "../../stories/Typography";
 import { GoToSection } from "../../stories/Cards";
 import { Icon } from "../../stories/Atoms";
 import './inici.css'
 
 export default function Inici (): JSX.Element {
-  const { auth, role } = useContext(WireframesContext)
-
-  const accesToFormations = () => {
-    if (auth) {
-      if (role === 'user') return '/app/formacio'
-      return '/app/nomes-usuaris'
-    }
-    return '/app/login'
-  }
   return (
     <div className="inici page">
       <div className="inici__container">
@@ -53,7 +42,7 @@ export default function Inici (): JSX.Element {
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
             />
           </Link>
-          <Link to={accesToFormations()}>
+          <Link to="/app/formacio">
             <GoToSection
               name="Formació"
               color="secondary"
