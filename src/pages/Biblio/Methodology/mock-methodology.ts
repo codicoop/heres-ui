@@ -4,11 +4,11 @@ import { SideSectionFilterProps } from "../../../stories/Organisms/SideSectionFi
 export const methodologies = [
   {
     id: 'methodology-1',
-    title: 'Methodology Card',
-    summary: 'This is a methodology card. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
+    title: 'Valor Social Integrat',
+    summary: 'La metodologia del Valor Social Integrat és una eina capaç de valorar, de manera objectiva i comparable, el valor global generat, o destruït, per qualsevol tipus d\'organització.',
     saved: false,
     ambit: 'Social',
-    sectors: ["Energétic", "Equips electronics", "Telecomunicacions i tecnologies de la informació"]
+    sectors: ["Tots"]
   },
   {
     id: 'methodology-2',
@@ -77,26 +77,41 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
 
 export const generalInfoSection: GeneralInfoSectionProps = {
   type: 'methodology',
-  title: 'Metodologia 1',
+  title: 'Valor Social Integrat',
   sectionInfo: [
     {
       category: 'Àmbit',
-      data: 'Àmbit 1'
+      data: 'Social'
     },
     {
       category: 'Organització impulsora',
-      data: 'Organització 1'
+      data: 'GEAccounting'
     },
     {
       category: 'Sectors d’aplicació',
-      data: 'Sector 1, Sector 2, Sector 3'
+      data: 'Tots'
     },
     {
       category: 'Complexitat d’implementació',
       data: 'Mitjana'
+    },
+    {
+      category: 'Resultats i mètriques generades',
+      data: 'Quantitatius (monetària)'
+    },
+    {
+      category: 'Tipus de mesura',
+      data: 'Retrospectiva'
+    },
+    {
+      category: 'Aplicabilitat en funció del lucre',
+      data: 'Per organitzacions sense lucre'
+    },
+    {
+      category: 'Complexitat d’implementació',
+      data: 'Alt'
     }
   ],
-  img: 'https://picsum.photos/900/600',
 }
 
 export const relatedType: 'practice' | 'methodology' | 'post' | 'formation' = 'formation'
@@ -126,41 +141,36 @@ export const methodologyContent: {
   imgSide?: 'left' | 'right'
 }[] = [
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+    text: 'La metodologia del Valor Social Integrat és una eina capaç de valorar, de manera objectiva i comparable, el valor global generat, o destruït, per qualsevol tipus d\'organització. Reflecteixi no sols el valor generat per als accionistes, sinó també el generat per a uns altres stakeholders o grups d\'interès com ara Proveedores, Clients, Administració, Societat, etc.',
   },
   {
-    img: 'https://picsum.photos/350/150',
+    text: 'L\'eina segueix la metodologia SPOLY: tres ecosistemes de valor que la suma d’elles generen el Valor Social Integrat:',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-    img: 'https://picsum.photos/350/150',
+    text: '- Valor social generat a través de l’activitat econòmica.',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+    text: '- Retorn soci-econòmic generat per l’Administració.',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-    img: 'https://picsum.photos/350/150',
-    imgSide: 'left',
+    text: '- Valor social específic generat per grups d’interès.',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+    text: 'Fases:',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+    text: '1. Creació de l’equip',
   },
   {
-    img: 'https://picsum.photos/350/150',
+    text: '2. Identificació dels grups d’interès',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+    text: '3. Identificació de les variables de valor',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-    img: 'https://picsum.photos/350/150',
-    imgSide: 'left',
+    text: '4. Monetització dels outputs',
   },
   {
-    img: 'https://picsum.photos/350/150',
+    text: '5. Càlcul i visualització del valor consolidat',
   },
 ]
