@@ -3,8 +3,11 @@ import { Text, Title } from "../../stories/Typography";
 import { GoToSection } from "../../stories/Cards";
 import { Icon } from "../../stories/Atoms";
 import './inici.css'
+import { iniciText } from "../mock-text";
 
 export default function Inici (): JSX.Element {
+  const { page, biblioInfo } = iniciText
+
   return (
     <div className="inici page">
       <div className="inici__container">
@@ -22,40 +25,23 @@ export default function Inici (): JSX.Element {
           </div>
         </div>
         <div className="inici__text container">
-          <Text>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
-          </Text>
+          <Title>{page.title}</Title>
+          <section className="inici__description">
+            {page.description.map((paragraph, index) => (
+              <Text key={`inici-description-${index}`}>{paragraph}</Text>
+            ))}
+          </section>
         </div>
         <section className="inici__section">
-          <Link to="/app/practiques">
-            <GoToSection
-              name="Bones pràctiques"
-              color="white"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-            />
-          </Link>
-          <Link to="/app/metodologies">
-            <GoToSection
-              name="Metodologies"
-              color="primary"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-            />
-          </Link>
-          <Link to="/app/formacio">
-            <GoToSection
-              name="Formació"
-              color="secondary"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-            />
-          </Link>
-          <Link to="/app/noticies">
-            <GoToSection
-              name="Noticies"
-              color="gray"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-            />
-          </Link>
+          {biblioInfo.map((info) => (
+            <Link to={info.link} key={`inici-info-${info.link}`}>
+              <GoToSection
+                name={info.name}
+                color={info.color}
+                description={info.description}
+              />
+            </Link>
+          ))}
         </section>
       </div>
     </div>
