@@ -35,7 +35,7 @@
   margin-top: auto;
   width: 100%;
 }
-.go-to-sections--item .text--body {
+.go-to-sections--item .inici__description {
   display: none;
 }
 
@@ -64,10 +64,17 @@
   .inici__intro h1 {
     padding: 20px 30px;
   }
-  .inici__text .text--body {
+  .inici__text .inici__description {
     columns: 2;
   }
-  .go-to-sections--item .text--body {
+  .inici__text .inici__description p {
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside:avoid;
+    -moz-page-break-inside:avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+  }
+  .go-to-sections--item .inici__description {
     display: block;
   }
 }
