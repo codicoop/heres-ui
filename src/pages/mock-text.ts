@@ -2,7 +2,8 @@ type biblioInfoType = {
   "name": string,
   "description": string,
   "color": "white" | "primary" | "secondary" | "gray" | "tertiary",
-  "link": string
+  "link": string,
+  "className"?: string
 }
 
 type iniciTextType = {
@@ -12,6 +13,27 @@ type iniciTextType = {
   },
   "biblioInfo": biblioInfoType[]
 }
+
+export const biblioInfo: biblioInfoType[] = [
+  {
+    "name": "Bones pràctiques",
+    "description": "Visita l’apartat de Bones Pràctiques per conèixer quines accions han implementat altres organitzacions.",
+    "color": "white",
+    "link": "/app/practiques"
+  },
+  {
+    "name": "Metodologies",
+    "description": "Visita l’apartat de Metodologies per conèixer quines metodologies pots implementar a la teva organització.",
+    "color": "primary",
+    "link": "/app/metodologies"
+  },
+  {
+    "name": "Noticies",
+    "description": "Visita l’apartat de notícies per estar al dia sobre tota l’actualitat en matèria d’impacte social i ambiental.",
+    "color": "gray",
+    "link": "/app/noticies"
+  }
+]
 
 export const iniciText: iniciTextType = {
   "page": {
@@ -24,29 +46,26 @@ export const iniciText: iniciTextType = {
     ]
   },
   "biblioInfo": [
-    {
-      "name": "Bones pràctiques",
-      "description": "Visita l’apartat de Bones Pràctiques per conèixer quines accions han implementat altres organitzacions.",
-      "color": "white",
-      "link": "/app/practiques"
-    },
-    {
-      "name": "Metodologies",
-      "description": "Visita l’apartat de Metodologies per conèixer quines metodologies pots implementar a la teva organització.",
-      "color": "primary",
-      "link": "/app/metodologies"
-    },
+    ...biblioInfo,
     {
       "name": "Formació",
       "description": "Accedeix al nostre portal Edukamma per conèixer la oferta de formacions online i presencials disponibles.",
       "color": "secondary",
       "link": "/app/formacio"
     },
-    {
-      "name": "Noticies",
-      "description": "Visita l’apartat de notícies per estar al dia sobre tota l’actualitat en matèria d’impacte social i ambiental.",
-      "color": "gray",
-      "link": "/app/noticies"
-    }
+  ]
+}
+
+export const biblioText: iniciTextType = {
+  "page": {
+    "title": "Biblioteca",
+    "description": [
+      "Davant l’excés d’informació en l'àmbit de la mesura i avaluació de l’impacte social, hem classificat i organitzat la informació en aquesta Biblioteca. Per facilitar l’aprenentatge i garantir que els conceptes són clars i específics.",
+      "Per mitjà d’un cercador, podràs trobar de manera ràpida i senzilla des de definicions dels conceptes més rellevants sobre la mesura de l’impacte com articles i publicacions científiques.",
+      "Tota la informació facilitada en aquesta plataforma ha estat contrastada per centres d’investigació i experts en la matèria de mesura d’impacte.",
+    ]
+  },
+  "biblioInfo": [
+    ...biblioInfo,
   ]
 }
