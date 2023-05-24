@@ -12,7 +12,7 @@ type filter = {
 
 export interface SideSectionFilterProps {
   title: string
-  description?: string
+  description: string[]
   filters: filter[]
 }
 
@@ -27,7 +27,11 @@ export function SideSectionFilter ({
         <Text as="h2" variant="title" className="side-section-filter__title">
           {title}
         </Text>
-        <Text>{description}</Text>
+        {description.map((paragraph, index) => (
+          <Text key={`side-section-filter-description-${index}`}>
+            {paragraph}
+          </Text>
+        ))}
       </div>
       <Filters filters={filters} className='side-section-filter' />
     </aside>
