@@ -54,8 +54,11 @@ export const methodologies = [
 
 export const infoSideSectionFilter: SideSectionFilterProps = {
   title: "Metodologies",
-  description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem asperiores fuga nesciunt adipisci? Neque rerum eius labore sint minus illo perspiciatis alias tempore doloremque earum. Quas ad eius ratione totam optio debitis!",
+  description: [
+    "Davant la falta d’estandardització en l’avaluació de l’impacte social, existeix un gran nombre de metodologies que permeten avaluar l’impacte d’una organització, projecte o programa.",
+    "En el nostre cercador podràs trobar de manera senzilla les metodologies que més s'ajusten als teus interessos.",
+    "Totes les metodologies han estat contrastades per centres d’investigació i experts en la matèria de mesura d’impacte."
+  ],
   filters: [
     {
       name: "Sector",

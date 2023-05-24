@@ -54,8 +54,11 @@ export const practices = [
 
 export const infoSideSectionFilter: SideSectionFilterProps = {
   title: "Bones pràctiques",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae consequatur maxime temporibus necessitatibus enim eaque inventore, omnis, dolorum assumenda dignissimos voluptate soluta sapiente asperiores, laboriosam velit repudiandae harum architecto nisi earum!",
+  description: [
+    "En aquest apartat podràs trobar accions que han estat implementades per d’altres organitzacions.",
+    "El cercador de Kamma recull la informació i classifica les bones pràctiques per a que siguin buscades de manera ràpida i senzilla.",
+    "La teva organització també pot compartir les seves bones pràctiques per ajudar a d’altres a millorar el seu impacte i generar possibles sinergies.",
+  ],
   filters: [
     {
       name: "Metodologia",

@@ -59,8 +59,10 @@ export const news = [
 
 export const infoSideSectionFilter: SideSectionFilterProps = {
   title: "Noticies",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, alias cupiditate a pariatur neque dicta quidem dolor itaque obcaecati nihil porro accusantium facilis quos ab dignissimos quod et impedit totam ad.",
+  description: [
+    "L’avaluació de l’impacte social en les organitzacions és un fet rellevant en l’actualitat, especialment pel que fa en l’àmbit normatiu.",
+    "En aquest apartat publicarem les últimes notícies relacionades amb l’impacte social i ambiental, i les novetats respecte els nous canvis normatius en matèria de sostenibilitat."
+  ],
   filters: [
     {
       name: "Metodologia",
