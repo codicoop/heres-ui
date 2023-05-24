@@ -3,8 +3,10 @@ import { Text, Title } from "../../stories/Typography";
 import { GoToSection } from "../../stories/Cards";
 import { Icon } from "../../stories/Atoms";
 import './library.css'
+import { biblioText } from "../mock-text";
 
 export default function Biblio (): JSX.Element {
+  const { page, biblioInfo } = biblioText
   return (
     <div className="library page">
       <div className="library__container">
@@ -22,38 +24,23 @@ export default function Biblio (): JSX.Element {
           </div>
         </div>
         <div className="library__content">
-          <Title>
-            Biblioteca
-          </Title>
-          <Text>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
-          </Text>
+          <Title>{page.title}</Title>
+          <section className="inici__description">
+            {page.description.map((paragraph, index) => (
+              <Text key={`inici-description-${index}`}>{paragraph}</Text>
+            ))}
+          </section>
         </div>
-        <section className="inici__section">
-          <Link to="/app/practiques">
-            <GoToSection
-              name="Bones pràctiques"
-              color="white"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-            />
-          </Link>
-          <Link to="/app/noticies">
-            <GoToSection
-              name="Noticies"
-              color="gray"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-            />
-          </Link>
-          <Link to="/app/metodologies" className="grid-two-columns">
-            <GoToSection
-              name="Metodologies"
-              color="primary"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-            />
-          </Link>
+        <section className="inici__section library__section">
+          {biblioInfo.map((info) => (
+            <Link to={info.link} key={`biblio-info-${info.link}`}>
+              <GoToSection
+                name={info.name}
+                color={info.color}
+                description={info.description}
+              />
+            </Link>
+          ))}
         </section>
       </div>
     </div>
