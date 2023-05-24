@@ -4,10 +4,10 @@ import { SideSectionFilterProps } from "../../../stories/Organisms/SideSectionFi
 export const news = [
   {
     id: 'news-1',
-    title: 'Post Card',
-    summary: 'This is a post card. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
+    title: 'El diàleg i la concertació social també a la responsabilitat social. Nou Marc de referència per a Catalunya',
+    summary: 'La Generalitat de Catalunya ha publicat el Nou Marc de Referència per a Catalunya. Una eina amb visió estratègica que ha estat elaborada pel Consell de Relacions Laborals.',
     ambit: 'Social',
-    sector: 'Sector social',
+    sector: 'Tots els sectors / Relacions laborals',
     methodologyRef: 'Metodologia 1'
   },
   {
@@ -93,19 +93,19 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
 
 export const generalInfoSection: GeneralInfoSectionProps = {
   type: 'post',
-  title: 'Post 1',
+  title: 'El diàleg i la concertació social també a la responsabilitat social. Nou Marc de referència per a Catalunya',
   sectionInfo: [
     {
       category: 'Data de publicació',
-      data: 'Març 2022'
+      data: '16 de maig de 2023'
     },
     {
       category: 'Àmbit',
-      data: 'Àmbit 1'
+      data: 'Social'
     },
     {
       category: 'Sector',
-      data: 'Sector 1'
+      data: 'Tots els sectors / Relacions laborals'
     },
   ],
   img: 'https://picsum.photos/900/600',
@@ -138,39 +138,14 @@ export const postContent: {
   imgSide?: 'left' | 'right'
 }[] = [
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+    text: 'No és habitual que l’Administració i les organitzacions sindicals i empresarials dialoguin i concertin matèries de responsabilitat social, però a Catalunya existeix una profunda tradició i al llarg dels anys s’ha enfortit.',
   },
   {
+    text: 'Des de fa més de dues dècades, Catalunya és pionera en la promoció de la responsabilitat social a les empreses. Un teixit productiu que genera valor per als treballadors i treballadores implicats, però també per a la societat en general, i que es corresponsabilitza amb el desenvolupament sostenible de l’entorn.',
     img: 'https://picsum.photos/350/150',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-    img: 'https://picsum.photos/350/150',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-    img: 'https://picsum.photos/350/150',
-    imgSide: 'left',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-  },
-  {
-    img: 'https://picsum.photos/350/150',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-    img: 'https://picsum.photos/350/150',
-    imgSide: 'left',
+    text: 'Enguany, el compromís i la visió compartida del que ha de ser aquesta matèria es renoven i han quedat recollits en el nou Marc de referència de la responsabilitat social a Catalunya, una eina amb visió estratègica que ha estat elaborada per les tres parts que fan possible l’òrgan de diàleg i concertació en matèria laboral i representació sindical i la protecció efectiva dels drets laborals de les treballadores i treballadors aquí i al món. ',
   },
   {
     img: 'https://picsum.photos/350/150',
