@@ -20,7 +20,7 @@ export default function Formation (): JSX.Element {
       <section className="formation__info">
         <Text variant="title">Formació</Text>
         <Text>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi dolore iure at quas saepe minima impedit molestiae. Fugiat, maxime adipisci dignissimos ducimus tenetur a ab veniam, mollitia, ipsum suscipit doloribus dolorem odit dolore enim!
+          Per actuar, cal mesurar. El següent pas és conèixer. A Kamma creiem que l’aprenentatge és essencial per seguir millorant l’impacte de les organitzacions.En el nostre portal Edukamma oferim una gran varietat de cursos formatius sobre la mesura i avaluació de l’impacte. On hi trobaràs formacions tant online com presencials, adequades a diferents nivells de dificultat, durada i preu.
         </Text>
       </section>
       <section className="formation__section">

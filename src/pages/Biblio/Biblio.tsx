@@ -26,10 +26,8 @@ export default function Biblio (): JSX.Element {
             Biblioteca
           </Title>
           <Text>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
+            Davant l’excés d’informació en l'àmbit de la mesura i avaluació de l’impacte social, hem classificat i organitzat la informació en aquesta Biblioteca. Per facilitar l’aprenentatge i garantir que els conceptes són clars i específics. Per mitjà del nostre cercador, podràs trobar de manera ràpida i senzilla  definicions, articles i publicacions científiques més rellevants sobre la mesura de l’impacte.
+            Tota la informació facilitada en aquesta plataforma ha estat contrastada per centres d’investigació i experts en la matèria.
           </Text>
         </div>
         <section className="inici__section">
@@ -37,21 +35,21 @@ export default function Biblio (): JSX.Element {
             <GoToSection
               name="Bones pràctiques"
               color="white"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+              description="Visita l’apartat de Bones Pràctiques per conèixer quines accions han implementat altres organitzacions."
             />
           </Link>
           <Link to="/app/noticies">
             <GoToSection
               name="Noticies"
               color="gray"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+              description="Visita l’apartat de notícies per estar al dia sobre tota l’actualitat en matèria d’impacte social i ambiental."
             />
           </Link>
           <Link to="/app/metodologies" className="grid-two-columns">
             <GoToSection
               name="Metodologies"
               color="primary"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+              description="Visita l’apartat de Metodologies per conèixer quines metodologies existeixen i pot implementar la teva organització.."
             />
           </Link>
         </section>

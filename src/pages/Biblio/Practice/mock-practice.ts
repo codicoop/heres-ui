@@ -4,11 +4,11 @@ import { SideSectionFilterProps } from "../../../stories/Organisms/SideSectionFi
 export const practices = [
   {
     id: 'practice-1',
-    title: 'Practice Card',
-    summary: 'This is a practice card',
+    title: ' Càlcul del Valor Social Integrat d’una consultoria estratègica d’economia social',
+    summary: 'Monetitzar el valor social generat per l’activitat empresarial i identificar indicadors de seguiment que ajudin a la gestió estratègica.',
     ambit: 'Social',
-    sector: 'Sector social',
-    methodologyRef: 'Metodologia 1'
+    sector: 'Serveis professionals',
+    methodologyRef: 'VSI',
   },
   {
     id: 'practice-2',
@@ -55,7 +55,7 @@ export const practices = [
 export const infoSideSectionFilter: SideSectionFilterProps = {
   title: "Bones pràctiques",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae consequatur maxime temporibus necessitatibus enim eaque inventore, omnis, dolorum assumenda dignissimos voluptate soluta sapiente asperiores, laboriosam velit repudiandae harum architecto nisi earum!",
+    "En aquest apartat podràs trobar accions que han estat dissenyades i implementades per d’altres organitzacions. El cercador de Kamma recull la informació i classifica les bones pràctiques per a que siguin buscades de manera ràpida i senzilla. La teva organització també pot compartir les seves bones pràctiques per difondre i ajudar a d’altres a millorar el seu impacte i generar possibles sinergies.",
   filters: [
     {
       name: "Metodologia",
@@ -92,30 +92,53 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
 
 export const generalInfoSection: GeneralInfoSectionProps = {
   type: 'practice',
-  title: 'Pràctica 1',
+  title: 'Càlcul del Valor Social Integrat d’una consultoria estratègica d’economia social.',
   sectionInfo: [
     {
       category: 'Data d\'inici',
-      data: 'Març 2022'
+      data: 'Febrer 2023'
     },
     {
       category: 'Data final',
-      data: 'Octubre 2022'
+      data: 'Juny 2023'
     },
     {
       category: 'Organització',
-      data: 'Organització 1'
+      data: 'Heres Social SCCL'
     },
     {
       category: 'Àmbit',
-      data: 'Àmbit 1'
+      data: 'Social'
     },
     {
       category: 'Metodologia de referència',
-      data: 'Metodologia 1'
+      data: 'VSI'
     },
+    // Aquestes categories les he afegit jo (Marta)
+    {
+      category: 'Sector',
+      data: 'Serveis professionals'
+    },
+    {
+      category: 'ODS', // A Rizoo hi ha un objecte amb toooootes les ODS ja fetes
+      data: '16, 17'
+    },
+    {
+      category: 'Grups d\'interès / Stakeholders afectats',
+      data: 'Tots'
+    },
+    {
+      category: 'Web organització',
+      data: 'https://www.google.es/'
+    },
+    {
+      category: 'Persona de contacte',
+      data: 'ruben@heressocial.eu'
+    },
+    // Faltaria la descripció, el text en si mateix que té diferents apartats, llistes ol, etc. O sigui, un richtext.
+    // I el logo
   ],
-  img: 'https://picsum.photos/900/600',
+  img: 'https://picsum.photos/900/600', // Imatge al docs del drive
 }
 
 export const relatedType: 'practice' | 'methodology' | 'post' | 'formation' = 'formation'

@@ -4,11 +4,15 @@ import { SideSectionFilterProps } from "../../../stories/Organisms/SideSectionFi
 export const news = [
   {
     id: 'news-1',
-    title: 'Post Card',
-    summary: 'This is a post card. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
+    title: 'El diàleg i la concertació social també a la responsabilitat social. Nou Marc de referència per a Catalunya',
+    summary: 'La Generalitat de Catalunya ha publicat el Nou Marc de Referència per a Catalunya. Una eina amb visió estratègica que ha estat elaborada pel Consell de Relacions Laborals.',
     ambit: 'Social',
-    sector: 'Sector social',
-    methodologyRef: 'Metodologia 1'
+    sector: 'Tots els sectors',
+    methodologyRef: '-',
+    // He afegit aquestes categories per poder mostrar la info que ens donen
+    date: '16/05/2023',
+    article: 'No és habitual que l’Administració i les organitzacions sindicals i empresarials dialoguin i concertin matèries de responsabilitat social, però a Catalunya existeix una profunda tradició i al llarg dels anys s’ha enfortit. Des de fa més de dues dècades, Catalunya és pionera en la promoció de la responsabilitat social a les empreses. Un teixit productiu que genera valor per als treballadors i treballadores implicats, però també per a la societat en general, i que es corresponsabilitza amb el desenvolupament sostenible de l’entorn. Enguany, el compromís i la visió compartida del que ha de ser aquesta matèria es renoven i han quedat recollits en el nou Marc de referència de la responsabilitat social a Catalunya, una eina amb visió estratègica que ha estat elaborada per les tres parts que fan possible l’òrgan de diàleg i concertació en matèria laboral i representació sindical i la protecció efectiva dels drets laborals de les treballadores i treballadors aquí i al món.',
+    origin: 'https://treball.gencat.cat/ca/rscat/serveis/eines-autoavaluacio/',
   },
   {
     id: 'news-2',
@@ -60,7 +64,7 @@ export const news = [
 export const infoSideSectionFilter: SideSectionFilterProps = {
   title: "Noticies",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, alias cupiditate a pariatur neque dicta quidem dolor itaque obcaecati nihil porro accusantium facilis quos ab dignissimos quod et impedit totam ad.",
+    "L’avaluació de l’impacte social en les organitzacions és un fet rellevant en l’actualitat, especialment pel que fa en l’àmbit normatiu. En aquest apartat publicarem les últimes notícies relacionades amb l’impacte social i ambiental, i les novetats respecte els nous canvis normatius en matèria de sostenibilitat.",
   filters: [
     {
       name: "Metodologia",

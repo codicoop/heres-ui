@@ -1,14 +1,23 @@
-import { GeneralInfoSectionProps } from "../../../stories/Organisms/GeneralInfoSection/GeneralInfoSection"
 import { SideSectionFilterProps } from "../../../stories/Organisms/SideSectionFilter/SideSectionFilter"
 
 export const methodologies = [
   {
     id: 'methodology-1',
-    title: 'Methodology Card',
-    summary: 'This is a methodology card. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde similique tempore iure!',
-    saved: false,
+    title: 'Valor Social Integrat',
+    summary: 'La metodologia del Valor Social Integrat és una eina capaç de valorar, de manera objectiva i comparable, el valor global generat, o destruït, per qualsevol tipus d\'organització. Reflecteixi no sols el valor generat per als accionistes, sinó també el generat per a uns altres stakeholders o grups d\'interès com ara Proveedores, Clients, Administració, Societat, etc.',
+    saved: true,
     ambit: 'Social',
-    sectors: ["Energétic", "Equips electronics", "Telecomunicacions i tecnologies de la informació"]
+    sectors: ["Tots"],
+    // Categories afegides
+    logo: '',
+    site: '',
+    promotor: 'GEAccounting',
+    promotor_logo: '',
+    description: '', // Ha de ser un richtext que pugui contenir llistes i històries
+    results: 'Quantitatius - unitat monetària',
+    type: 'Retrospectiva',
+    type_of_entity: 'Per organitzacions sense ànim de lucre',
+    complexity: 'Alta'
   },
   {
     id: 'methodology-2',
@@ -55,7 +64,7 @@ export const methodologies = [
 export const infoSideSectionFilter: SideSectionFilterProps = {
   title: "Metodologies",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem asperiores fuga nesciunt adipisci? Neque rerum eius labore sint minus illo perspiciatis alias tempore doloremque earum. Quas ad eius ratione totam optio debitis!",
+    "Davant la falta d’estandardització en l’avaluació de l’impacte social, existeix un gran nombre de metodologies que permeten avaluar l’impacte d’una organització, projecte o programa. En el nostre cercador podràs trobar de manera senzilla les metodologies que més s'ajusten als teus interessos. Totes les metodologies han estat contrastades per centres d’investigació i experts en la matèria de mesura d’impacte.",
   filters: [
     {
       name: "Sector",

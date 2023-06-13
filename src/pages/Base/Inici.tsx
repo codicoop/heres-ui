@@ -23,8 +23,7 @@ export default function Inici (): JSX.Element {
         </div>
         <div className="inici__text container">
           <Text>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est natus asperiores, veritatis ullam iste non itaque!
+            A Kamma creiem que el primer pas per poder actuar és conèixer el teu impacte. Kamma és una plataforma especialitzada en la mesura i avaluació de l’impacte social i ambiental. On trobaràs informació rigorosa i contrastada sobre la mesura de l'impacte. Adreçada a qualsevol tipus d’organització, ja sigui a PIME, gran empresa, sense ànim de lucre o entitat pública. Oferim des d’orientació amb la nostra eina d’autodiagnosi, fins a formació o acompanyament professional a mida amb les nostres persones expertes. Amb Kamma, podràs mesurar, actuar i comunicar de forma rigorosa l’impacte de la teva organització.
           </Text>
         </div>
         <section className="inici__section">
@@ -32,28 +31,28 @@ export default function Inici (): JSX.Element {
             <GoToSection
               name="Bones pràctiques"
               color="white"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+              description="Visita l’apartat de Bones Pràctiques per conèixer quines accions han implementat altres organitzacions."
             />
           </Link>
           <Link to="/app/metodologies">
             <GoToSection
               name="Metodologies"
               color="primary"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+              description="Visita l’apartat de Metodologies per conèixer quines metodologies existeixen i pot implementar la teva organització."
             />
           </Link>
           <Link to="/app/formacio">
             <GoToSection
               name="Formació"
               color="secondary"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+              description="Accedeix al nostre portal Edukamma per conèixer la oferta de formacions online i presencials disponibles."
             />
           </Link>
           <Link to="/app/noticies">
             <GoToSection
               name="Noticies"
               color="gray"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+              description="Visita l’apartat de notícies per estar al dia sobre tota l’actualitat en matèria d’impacte social i ambiental."
             />
           </Link>
         </section>
