@@ -1,24 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Barlow:wght@300;400;600;700&display=swap');
+@font-face {
+  font-family: 'Cairo';
+  src: url('../../public/fonts/Cairo-VariableFont_slnt\,wght.ttf') format('truetype');
+}
 
 :root {
   --real-white: #FFF;
-  --white: #F7F7F7;
+  --white: #F5EEE7;
   --black: #4F4F4F;
-  --gray: #777777;
+  --gray: rgba(79, 79, 79, 0.2);
 
-  --primary: #63CECA;
-  --secondary: #F0E77B;
-  --tertiary: #E07A5F;
-  --error: #EF476F;
+  --primary: #008636;
+  --secondary: #FA6B1E;
+
+  --primary-soft: rgba(0, 134, 54, 0.2);
+  --secondary-soft: rgba(250, 107, 30, 0.4);
+  --white-soft: rgba(245, 238, 231, 0.4);
+  --black-soft: rgba(79, 79, 79, 0.2);
 
   --primary-text: var(--white);
   --secondary-text: var(--black);
-  --tertiary-text: var(--black);
 
-  --primary-hover: #36ABA7;
-  --secondary-hover: #E9DA35;
-  --tertiary-hover: #CE4B27;
+  --primary-hover: var(--primary-soft);
+  --secondary-hover: var(--secondary-soft);
 
-  --font-family-sans: 'Barlow', sans-serif;
-  --font-family-condensed: 'Barlow Condensed', sans-serif;
+  --font-family-sans: 'Cairo', sans-serif;
 }

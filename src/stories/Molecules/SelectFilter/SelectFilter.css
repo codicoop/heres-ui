@@ -8,7 +8,7 @@
   display: block;
   margin-bottom: 0.8rem;
   font-size: 2.4rem;
-  font-family: var(--font-family-condensed);
+  font-family: var(--font-family-sans);
 }
 
 .select-filter select {
