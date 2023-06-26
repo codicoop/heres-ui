@@ -1,6 +1,6 @@
 html,
 body {
-  height: 100%;
+  min-height: 100vh;
   font-family: var(--font-family-sans);
   font-size: var(--font-size-base, 10px);
   color: var(--black);
@@ -8,11 +8,11 @@ body {
 }
 
 #root {
-  height: 100%;
+  min-height: 100vh;
   font-size: 1.4rem;
 }
 .App {
-  height: 100%;
+  min-height: 100vh;
 }
 .page {
   min-height: calc(100% - 55px);
