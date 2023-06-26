@@ -47,13 +47,9 @@ export default function Header (): JSX.Element {
   return (
     <header className="header">
       <div className="header__topbar topbar">
-        <div className="topbar__logo">
-          <Text>
-            <Link to="/app/inici" onClick={closeDashboardMenu}>
-              Logo
-            </Link>
-          </Text>
-        </div>
+        <Link to="/app/inici" onClick={closeDashboardMenu} className="topbar__logo">
+          <img src="../../public/logos/LOGO-KAMMA_IMPACT_GRÀFICA-DEFINITIVA.png" alt="Kamma Impact" />
+        </Link>
         <div className="topbar__actions">
           <div className="topbar__user">
             {auth 
@@ -112,13 +108,9 @@ export default function Header (): JSX.Element {
         </div>
       </div>
       <nav className="header__nav">
-        <div className="header__logo">
-          <Text>
-            <Link to="/app/inici"  onClick={closeMenu}>
-              Logo
-            </Link>
-          </Text>
-        </div>
+        <Link to="/app/inici"  onClick={closeMenu} className="header__logo">
+          <img src="../../public/logos/LOGO-KAMMA_IMPACT_GRÀFICA-DEFINITIVA.png" alt="Kamma Impact" />
+        </Link>
         <ul>
           {routesHeader
             .map((route) => (

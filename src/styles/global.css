@@ -74,7 +74,6 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 8;
-  border-bottom: 2px solid var(--real-white);
 }
 .header__logo, .header__nav, .header__user, .header__nav--dashboard, .no-mobile {
   display: none;
@@ -83,6 +82,12 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.topbar__logo {
+  height: 40px;
+}
+.topbar__logo img {
+  height: 100%;
 }
 .topbar__actions {
   display: flex;
@@ -142,7 +147,6 @@ textarea {
 }
 .header__nav--dashboard.is-open .dashboard-menu__title {
   padding: 3rem;
-  border-bottom: 1px solid var(--grey);
 }
 
 /*  */
@@ -181,6 +185,10 @@ textarea {
   }
   .header__logo {
     display: block;
+    height: 60px;
+  }
+  .header__logo img {
+    height: 100%;
   }
   .header__nav {
     display: flex;
