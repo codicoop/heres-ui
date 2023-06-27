@@ -11,19 +11,6 @@ export default function Inici (): JSX.Element {
   return (
     <div className="inici page">
       <div className="inici__container">
-        <div className="inici__intro">
-          <div className="inici__img">
-            <img src="../../public/imatge_prova.png" alt="" />
-          </div>
-          <Title>Eina d'Autodiagnosi sobre Impacte</Title>
-          <div className="inici__arrow">
-            <Icon
-              name="arrowRightThick"
-              selectedColor="primary"
-              hoverColor="primary"
-            />
-          </div>
-        </div>
         <div className="inici__text container">
           <Title>{page.title}</Title>
           <section className="inici__description">

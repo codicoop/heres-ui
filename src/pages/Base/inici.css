@@ -14,20 +14,6 @@
   align-items: flex-start;
   gap: 35px;
 }
-.inici__intro {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-  background-color: var(--primary);
-}
-.inici__img {
-  display: none;
-}
-.inici__intro h1 {
-  width: 70%;
-}
 
 .inici__section {
   display: grid;
@@ -40,30 +26,6 @@
 }
 
 @media (min-width: 768px) {
-  .inici__intro {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding: 0;
-    max-height: 200px;
-  }
-  .inici__img {
-    display: block;
-    grid-column: 1 / span 3;
-    overflow: clip;
-    max-height: 200px;
-    margin-top: -48px;
-  }
-  .inici__img img  {
-    object-fit: cover;
-  }
-  .inici__arrow {
-    grid-column: 6;
-    padding-right: 30px;
-    justify-self: end;
-  }
-  .inici__intro h1 {
-    padding: 20px 30px;
-  }
   .inici__text .inici__description {
     columns: 2;
   }
