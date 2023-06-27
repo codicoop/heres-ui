@@ -72,8 +72,18 @@
   .library__intro h1 {
     padding: 20px 30px;
   }
-  .library__content .text--body {
+  .library__content .inici__description {
     columns: 2;
+  }
+  .library__content .inici__description p {
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside:avoid;
+    -moz-page-break-inside:avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+  }
+  .go-to-sections--item .inici__description {
+    display: block;
   }
   .go-to-sections--item .text--body {
     display: block;
