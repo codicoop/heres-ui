@@ -13,12 +13,6 @@ export const routesHeader: any[] = [
     role: ['all'],
   },
   {
-    path: 'autodiagnostic',
-    element: <>Eina Autodiagnostic</>,
-    name: 'Eina Autodiagnostic',
-    role: ['org'],
-  },
-  {
     path: 'formacio',
     element: <Formation />,
     name: 'Formació',
@@ -35,6 +29,13 @@ export const routesHeader: any[] = [
     element: <Contact />,
     name: 'Contacte',
     role: ['all'],
+  },
+  {
+    path: 'autodiagnostic',
+    element: <>Eina Autodiagnostic</>,
+    name: 'Eina Autodiagnostic',
+    role: ['org'],
+    call: true,
   },
 ]
 

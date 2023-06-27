@@ -8,6 +8,7 @@ const meta: Meta<typeof ItemNav> = {
   tags: ['autodocs'],
   args: {
     children: 'ItemNav',
+    call: false,
   },
   argTypes: {
   },

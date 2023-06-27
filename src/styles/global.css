@@ -199,7 +199,7 @@ textarea {
     flex-direction: row;
   
     align-items: center;
-    gap: 16px;
+    gap: 8px;
     padding-top: 0;
   }
   .header__user {

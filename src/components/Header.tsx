@@ -115,7 +115,7 @@ export default function Header (): JSX.Element {
           {routesHeader
             .map((route) => (
               roleAcces(route) && (
-                <ItemNav key={route.path}>
+                <ItemNav key={route.path} call={route.call}>
                   <Link to={route.path} onClick={closeMenu}>
                     {route.name}
                   </Link>

@@ -1,13 +1,41 @@
 .item-nav {
+  display: inline;
   font-size: 1.8rem;
   font-weight: medium;
   list-style: none;
   cursor: pointer;
 }
 
-.item-nav:hover span {
-  border-bottom: 3px solid var(--secondary);
-  font-weight: bold;
+.item-nav:not(:has(svg)) {
+  padding: 0px 24px;
+  border-radius: var(--border-radius-btn);
+  color: var(--primary);
+}
+
+.item-nav:hover:not(:has(svg)) {
+  background-color: var(--primary-hover);
+}
+
+.item-nav:not(:has(svg)) a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.item-nav--call:not(:has(svg)) {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.item-nav--call:not(:has(svg)):hover {
+  color: var(--primary);
+}
+
+.item-nav--call:not(:has(svg)) a {
+  color: var(--white);
+}
+
+.item-nav--call:not(:has(svg)):hover a {
+  color: var(--primary);
 }
 
 @media (min-width: 768px) {
