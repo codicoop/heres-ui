@@ -4,8 +4,8 @@ import { SideSectionFilterProps } from "../../../stories/Organisms/SideSectionFi
 export const practices = [
   {
     id: 'practice-1',
-    title: 'Practice Card',
-    summary: 'This is a practice card',
+    title: 'Càlcul del Valor Social Integrat d’una consultoria estratègica d’economia social.',
+    summary: 'Monetitzar el valor social generat per l’activitat empresarial i identificar indicadors de seguiment que ajudin a la gestió estratègica.',
     ambit: 'Social',
     sector: 'Sector social',
     methodologyRef: 'Metodologia 1'
@@ -55,9 +55,9 @@ export const practices = [
 export const infoSideSectionFilter: SideSectionFilterProps = {
   title: "Bones pràctiques",
   description: [
-    "En aquest apartat podràs trobar accions que han estat implementades per d’altres organitzacions.",
+    "En aquest apartat podràs trobar accions que han estat dissenyades i implementades per d’altres organitzacions.",
     "El cercador de Kamma recull la informació i classifica les bones pràctiques per a que siguin buscades de manera ràpida i senzilla.",
-    "La teva organització també pot compartir les seves bones pràctiques per ajudar a d’altres a millorar el seu impacte i generar possibles sinergies.",
+    "La teva organització també pot compartir les seves bones pràctiques per difondre i ajudar a d’altres a millorar el seu impacte i generar possibles sinergies.",
   ],
   filters: [
     {
@@ -95,27 +95,27 @@ export const infoSideSectionFilter: SideSectionFilterProps = {
 
 export const generalInfoSection: GeneralInfoSectionProps = {
   type: 'practice',
-  title: 'Pràctica 1',
+  title: 'Càlcul del Valor Social Integrat d’una consultoria estratègica d’economia social.',
   sectionInfo: [
     {
       category: 'Data d\'inici',
-      data: 'Març 2022'
+      data: 'Febrer 2023'
     },
     {
       category: 'Data final',
-      data: 'Octubre 2022'
+      data: 'Juny 2023'
     },
     {
       category: 'Organització',
-      data: 'Organització 1'
+      data: 'Heres Social SCCL'
     },
     {
       category: 'Àmbit',
-      data: 'Àmbit 1'
+      data: 'Social'
     },
     {
       category: 'Metodologia de referència',
-      data: 'Metodologia 1'
+      data: 'VSI'
     },
   ],
   img: 'https://picsum.photos/900/600',
@@ -148,41 +148,26 @@ export const practiceContent: {
   imgSide?: 'left' | 'right'
 }[] = [
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
+    text: 'Objectiu de la bona pràctica: Monetitzar el valor social generat per l’activitat empresarial i identificar indicadors de seguiment que ajudin a la gestió estratègica.',
   },
   {
     img: 'https://picsum.photos/350/150',
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-    img: 'https://picsum.photos/350/150',
+    text: `Descripció d’accions fetes:
+    1. Identificació i classificació dels grups d’interès.
+    2. Entrevistes amb els grups d’interès.
+    3. Identificació de variables de valor.
+    4. Monetització (proxies) dels indicadors de seguiment.
+    5. Integració de les variables econòmiques amb les variables de valor.
+    6. Comunicació dels resultats obtinguts.
+    `,
   },
   {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-    img: 'https://picsum.photos/350/150',
-    imgSide: 'left',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-  },
-  {
-    img: 'https://picsum.photos/350/150',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-  },
-  {
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, nisi aut, earum laboriosam saepe voluptates rerum pariatur, adipisci iure id eos? Laudantium. Nostrum est iusto, aliquid tempora quis blanditiis similique excepturi debitis repudiandae fugiat! Repellat laudantium ratione deserunt, repudiandae itaque, natus incidunt officiis vitae, excepturi temporibus earum voluptates!',
-    img: 'https://picsum.photos/350/150',
-    imgSide: 'left',
-  },
-  {
-    img: 'https://picsum.photos/350/150',
+    text: `Resultats aconseguits (Qualitatius i Quantitatius):
+    1. Establiment d’indicadors de seguiment per propers anys.
+    2. Mantenir un diàleg amb els diferents grups d’interès i rebre feedback.
+    3. Retorn econòmic a la societat del valor social generat.
+    `,
   },
 ]
