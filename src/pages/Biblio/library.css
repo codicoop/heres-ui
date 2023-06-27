@@ -14,20 +14,6 @@
   align-items: flex-start;
   gap: 35px;
 }
-.library__intro {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-  background-color: var(--primary);
-}
-.library__img {
-  display: none;
-}
-.library__intro h1 {
-  width: 70%;
-}
 .library__content {
   padding: 30px;
 }
@@ -49,29 +35,6 @@
 }
 
 @media (min-width: 768px) {
-  .library__intro {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding: 0;
-    max-height: 200px;
-  }
-  .library__img {
-    display: block;
-    grid-column: 1 / span 3;
-    overflow: clip;
-    max-height: 200px;
-  }
-  .library__img img  {
-    object-fit: cover;
-  }
-  .library__arrow {
-    grid-column: 6;
-    padding-right: 30px;
-    justify-self: end;
-  }
-  .library__intro h1 {
-    padding: 20px 30px;
-  }
   .library__content .inici__description {
     columns: 2;
   }

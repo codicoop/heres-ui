@@ -10,19 +10,6 @@ export default function Biblio (): JSX.Element {
   return (
     <div className="library page">
       <div className="library__container">
-        <div className="library__intro">
-          <div className="library__img">
-            <img src="../../public/imatge_prova.png" alt="" />
-          </div>
-          <Title>Eina d'autodiagnosi</Title>
-          <div className="library__arrow">
-            <Icon
-              name="arrowRightThick"
-              selectedColor="primary"
-              hoverColor="primary"
-            />
-          </div>
-        </div>
         <div className="library__content">
           <Title>{page.title}</Title>
           <section className="inici__description">
