@@ -24,4 +24,7 @@
   --secondary-hover: var(--secondary-soft);
 
   --font-family-sans: 'Cairo', sans-serif;
+
+  --border-radius: 8px;
+  --border-radius-btn: 32px;
 }

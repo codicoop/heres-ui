@@ -6,44 +6,32 @@
 
 .button {
   display: inline-block;
-  border-radius: var(--border-radius, 'none');
-  padding: 8px 16px;
+  border-radius: var(--border-radius-btn, 'none');
+  padding: 0px 32px;
   background: var(--btn-color);
   color: var(--btn-color-contrast);
-  border: 2px solid var(--btn-color);
-  text-transform: uppercase;
-  font-weight: 700;
   font-size: 16px;
   font-family: var(--font-family-sans);
   cursor: pointer;
+  border: none;
 }
 
-.button:hover {
+.button:hover,
+.button--base:hover {
   background: var(--btn-color-hover);
-  border-color: var(--btn-color-hover);
-  color: var(--btn-color-contrast);
+  color: var(--btn-color);
 }
 
 .button--base,
 .button--shy {
-  background: inherit;
+  background: transparent;
+}
+
+.button--base {
   color: var(--btn-color);
 }
 
-.button--base:hover,
-.button--shy:hover {
-  background: var(--btn-color);
-  border-color: var(--btn-color);
-  color: var(--btn-color-contrast);
-}
-
 .button--shy {
-  border-color: transparent;
-}
-
-.button--shy:hover {
-  background: transparent;
-  border-color: transparent;
   color: var(--btn-color-hover);
 }
 
@@ -62,4 +50,5 @@
 .button--big {
   width: 100%;
   padding: 4.8rem 16px;
+  border-radius: var(--border-radius);
 }
