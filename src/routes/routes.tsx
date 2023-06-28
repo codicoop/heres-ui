@@ -4,7 +4,7 @@ import { Contact, ContactOk, Inici, OnlyUserAccess } from '../pages/Base'
 import { Biblio, MethodologyAdd, MethodologyEdit, MethodologyList, MethodologyView, NewsList, PostAdd, PostEdit, PostView, PracticeAdd, PracticeEdit, PracticeList, PracticeView } from '../pages/Biblio'
 import { Profile, ProfileEdit } from '../pages/Dashboard'
 import { Formation } from '../pages/Formation'
-import { Tool } from '../pages/Tool'
+import { Tool, ToolOk } from '../pages/Tool'
 
 export const routesHeader: any[] = [
   {
@@ -133,7 +133,7 @@ export const routesTool: any[] = [
   },
   {
     path: 'autodiagnostic-ok',
-    element: <Tool />,
+    element: <ToolOk />,
     name: 'Autodiagnostic Ok',
     role: ['org'],
   }
