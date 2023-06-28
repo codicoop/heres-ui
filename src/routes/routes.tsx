@@ -4,6 +4,7 @@ import { Contact, ContactOk, Inici, OnlyUserAccess } from '../pages/Base'
 import { Biblio, MethodologyAdd, MethodologyEdit, MethodologyList, MethodologyView, NewsList, PostAdd, PostEdit, PostView, PracticeAdd, PracticeEdit, PracticeList, PracticeView } from '../pages/Biblio'
 import { Profile, ProfileEdit } from '../pages/Dashboard'
 import { Formation } from '../pages/Formation'
+import { Tool } from '../pages/Tool'
 
 export const routesHeader: any[] = [
   {
@@ -32,7 +33,7 @@ export const routesHeader: any[] = [
   },
   {
     path: 'autodiagnostic',
-    element: <>Eina Autodiagnostic</>,
+    element: <Tool />,
     name: 'Eina Autodiagnostic',
     role: ['org'],
     call: true,
@@ -120,6 +121,21 @@ export const routesBiblio: any[] = [
     element: <NewsList />,
     name: 'Noticies',
     role: ['all'],
+  }
+]
+
+export const routesTool: any[] = [
+  {
+    path: 'autodiagnostic/:step',
+    element: <Tool />,
+    name: 'Autodiagnostic',
+    role: ['org'],
+  },
+  {
+    path: 'autodiagnostic-ok',
+    element: <Tool />,
+    name: 'Autodiagnostic Ok',
+    role: ['org'],
   }
 ]
 
@@ -214,6 +230,7 @@ export const routesWireframes: any[] = [
       ...routesDashboard,
       ...routesBiblio,
       ...routesBiblioActions,
+      ...routesTool,
       ...routesFormation,
       ...routesBase,
     ],
