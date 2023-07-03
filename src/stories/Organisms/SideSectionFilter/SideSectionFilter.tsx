@@ -1,5 +1,4 @@
-import { Icon } from '../../Atoms'
-import { Text, Title } from '../../Typography'
+import { Text } from '../../Typography'
 import { Filters } from '../Filters'
 import './SideSectionFilter.css'
 
@@ -12,7 +11,7 @@ type filter = {
 
 export interface SideSectionFilterProps {
   title: string
-  description: string[]
+  description: string | string[]
   filters: filter[]
 }
 
@@ -27,11 +26,16 @@ export function SideSectionFilter ({
         <Text as="h2" variant="title" className="side-section-filter__title">
           {title}
         </Text>
-        {description.map((paragraph, index) => (
-          <Text key={`side-section-filter-description-${index}`}>
-            {paragraph}
-          </Text>
-        ))}
+        {typeof description === 'string' && (
+          <Text>{description}</Text>
+        )}
+        {typeof description !== 'string' && (
+          description.map((paragraph, index) => (
+            <Text key={`side-section-filter-description-${index}`}>
+              {paragraph}
+            </Text>
+          ))
+        )}
       </div>
       <Filters filters={filters} className='side-section-filter' />
     </aside>
