@@ -65,6 +65,10 @@ textarea {
   grid-column: span 2;
 }
 
+.select-role {
+  text-align: center;
+}
+
 /* Header menu styles */
 .header {
   padding: 1.4rem 3rem;

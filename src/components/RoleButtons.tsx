@@ -10,20 +10,20 @@ export default function RoleButtons (): JSX.Element {
       <Button
         label="Organització"
         onClick={() => setRole('org')}
-        color="tertiary"
-        relevance={role === 'org' ? 'call' : 'shy'}
+        color="primary"
+        relevance={role === 'org' ? 'call' : 'base'}
       />
       <Button
         label="Usuari"
         onClick={() => setRole('user')}
-        color="tertiary"
-        relevance={role === 'user' ? 'call' : 'shy'}
+        color="primary"
+        relevance={role === 'user' ? 'call' : 'base'}
       />
       <Button
         label="Admin"
         onClick={() => setRole('admin')}
-        color="tertiary"
-        relevance={role === 'admin' ? 'call' : 'shy'}
+        color="primary"
+        relevance={role === 'admin' ? 'call' : 'base'}
       />
     </>
   )

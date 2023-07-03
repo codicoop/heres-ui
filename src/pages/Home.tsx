@@ -1,13 +1,11 @@
 import RoleButtons from "../components/RoleButtons";
-import { MenuRouter } from "../routes";
 import { Text } from "../stories/Typography";
 
 export default function Home (): JSX.Element {
   return (
-    <>
-      <Text variant="title" extra>Here's UI</Text>
+    <section className="select-role">
+      <Text variant="title">Escull el Rol amb el que vols veure la demo</Text>
       <RoleButtons />
-      <MenuRouter />
-    </>
+    </section>
   )
 }
