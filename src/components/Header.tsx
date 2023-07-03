@@ -48,7 +48,7 @@ export default function Header (): JSX.Element {
     <header className="header">
       <div className="header__topbar topbar">
         <Link to="/app/inici" onClick={closeDashboardMenu} className="topbar__logo">
-          <img src="../../public/logos/LOGO-KAMMA_IMPACT_GRÀFICA-DEFINITIVA.png" alt="Kamma Impact" />
+          <img src="/logos/LOGO-KAMMA_IMPACT_GRÀFICA-DEFINITIVA.png" alt="Kamma Impact" />
         </Link>
         <div className="topbar__actions">
           <div className="topbar__user">
@@ -109,7 +109,7 @@ export default function Header (): JSX.Element {
       </div>
       <nav className="header__nav">
         <Link to="/app/inici"  onClick={closeMenu} className="header__logo">
-          <img src="../../public/logos/LOGO-KAMMA_IMPACT_GRÀFICA-DEFINITIVA.png" alt="Kamma Impact" />
+          <img src="/logos/LOGO-KAMMA_IMPACT_GRÀFICA-DEFINITIVA.png" alt="Kamma Impact" />
         </Link>
         <ul>
           {routesHeader
