@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react'
 
-type role = 'org' | 'admin' | 'user'
+export type role = 'org' | 'admin' | 'user'
 
 interface ContextProps {
   auth: boolean
