@@ -5,7 +5,7 @@ export interface InputProps {
   label: string,
   name: string,
   placeholder?: string,
-  type?: 'text' | 'email' | 'password' | 'date',
+  type?: 'text' | 'email' | 'password' | 'date' | 'tel' | 'number',
   value?: string,
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void,
   className?: string,
