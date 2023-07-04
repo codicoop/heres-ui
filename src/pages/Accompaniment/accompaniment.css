@@ -1,0 +1,6 @@
+.accompaniment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.8rem;
+  padding: 2.8rem;
+}

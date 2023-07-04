@@ -1,4 +1,5 @@
 import { Error404, Home, InitWireframe } from '../pages'
+import { Accompaniment } from '../pages/Accompaniment'
 import { Login, RecoverPass, RecoverPassOk, Register, RegisterOk } from '../pages/Auth'
 import { Contact, ContactOk, Inici, OnlyUserAccess } from '../pages/Base'
 import { Biblio, MethodologyAdd, MethodologyEdit, MethodologyList, MethodologyView, NewsList, PostAdd, PostEdit, PostView, PracticeAdd, PracticeEdit, PracticeList, PracticeView } from '../pages/Biblio'
@@ -21,7 +22,7 @@ export const routesHeader: any[] = [
   },
   {
     path: 'acompanyament',
-    element: <>Acompanyament</>,
+    element: <Accompaniment />,
     name: 'Acompanyament',
     role: ['all'],
   },
